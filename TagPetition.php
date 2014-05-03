@@ -19,7 +19,7 @@ class Petition {
 		$parser->getOutput()->addModules( 'ext.Petition' );
 
 		$countries = Petition::getCountryArray( $parser->getOptions()->getUserLang() );
-		$form = Petition::defineForm( $petitionName, $linkSource, $countries );
+		$form = Petition::defineForm( $petitionName, $parser->getTitle()->getPrefixedText(), $linkSource, $countries );
 
 		$form->prepareForm();
 
@@ -53,6 +53,7 @@ class Petition {
 		$dbw = wfGetDB( DB_MASTER, array(), $wgPetitionDatabase );
 		$dbw->insert( 'petition_data', array(
 				'pt_petitionname' => $formData['petitionname'],
+				'pt_pagetitle'    => $formData['pagetitle'],
 				'pt_source'       => $formData['linksource'],
 				'pt_name'         => $formData['name'],
 				'pt_email'        => $formData['email'],
@@ -101,11 +102,15 @@ class Petition {
 		return $countries;
 	}
 
-	static function defineForm( $petitionName, $linkSource, $countries ) {
+	static function defineForm( $petitionName, $pageTitle, $linkSource, $countries ) {
 		$formDescriptor = array(
 			'petitionname' => array(
 				'type' => 'hidden',
 				'default' => $petitionName,
+			),
+			'pagetitle' => array(
+				'type' => 'hidden',
+				'default' => $pageTitle,
 			),
 			'linksource' => array(
 				'type' => 'hidden',
