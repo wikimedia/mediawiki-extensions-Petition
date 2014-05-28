@@ -49,7 +49,7 @@ class SpecialPetitionData extends SpecialPage {
 				'country'      => $row->pt_country,
 				'message'      => $row->pt_message,
 				'share'        => $row->pt_share,
-				'timestamp'    => $row->pt_timestamp
+				'timestamp'    => wfTimestamp( TS_MW, $row->pt_timestamp )
 				)
 			);
 

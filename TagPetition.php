@@ -60,7 +60,7 @@ class Petition {
 				'pt_country'      => $formData['country'],
 				'pt_message'      => $formData['personalmessage'],
 				'pt_share'        => $formData['share'],
-				'pt_timestamp'    => wfTimestampNow(TS_DB)
+				'pt_timestamp'    => $dbw->timestamp()
 				),
 			__METHOD__ );
 
