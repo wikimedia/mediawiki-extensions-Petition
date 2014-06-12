@@ -76,7 +76,7 @@ class Petition {
 	static function getNumberOfSignatures( $petitionName ) {
 		$dbr = wfGetDB( DB_SLAVE );
 		$num = $dbr->selectField( 'petition_data',
-			'count(*)',
+			'count(pt_id)',
 			array('pt_petitionname' => $petitionName)
 			);
 		return $num;
