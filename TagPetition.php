@@ -32,7 +32,7 @@ class Petition {
 		// Add the number of signatures first above the form.
 		$numberOfSignatures = Petition::getNumberOfSignatures( $petitionName );
 		$htmlOut .= '<div id="petition-num-signatures">';
-		$htmlOut .= wfMessage('petition-num-signatures', $numberOfSignatures)->text();
+		$htmlOut .= wfMessage('petition-num-signatures', $numberOfSignatures)->escaped();
 		$htmlOut .= '</div>' . "\n";
 		// Add the form, with any errors if there was an attempted submission
 		$htmlOut .= $form->getHtml($result) . "\n";
