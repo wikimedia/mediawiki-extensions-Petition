@@ -40,16 +40,16 @@ class SpecialPetitionData extends SpecialPage {
 		foreach( $res as $row ) {
 
 			fputcsv( $fh, array(
-				'id'           => $row->pt_id,
-				'petitionname' => $row->pt_petitionname,
-				'pagetitle'    => $row->pt_pagetitle,
-				'source'       => $row->pt_source,
-				'name'         => $row->pt_name,
-				'email'        => $row->pt_email,
-				'country'      => $row->pt_country,
-				'message'      => $row->pt_message,
-				'share'        => $row->pt_share,
-				'timestamp'    => wfTimestamp( TS_MW, $row->pt_timestamp )
+				$row->pt_id,
+				preg_replace("/^=/", "'=", $row->pt_petitionname),
+				preg_replace("/^=/", "'=", $row->pt_pagetitle),
+				preg_replace("/^=/", "'=", $row->pt_source),
+				preg_replace("/^=/", "'=", $row->pt_name),
+				preg_replace("/^=/", "'=", $row->pt_email),
+				preg_replace("/^=/", "'=", $row->pt_country),
+				preg_replace("/^=/", "'=", $row->pt_message),
+				$row->pt_share,
+				wfTimestamp( TS_MW, $row->pt_timestamp )
 				)
 			);
 
