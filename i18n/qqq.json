@@ -15,6 +15,7 @@
     "petition-num-signatures" : "Message including the total number of signatures on this petition so far.\nParameters:\n* $1 - number of signatures",
     "petition-form-submit"    : "Button to submit signature",
     "petition-form-required"  : "Message displayed to a user if a field is required, but not filled out when they try to submit.",
+    "petition-form-blocked"   : "Message displayed in place of the form if user is blocked",
     "petition-done"           : "Message which appears in place of the form once a user's signature has been submitted successfully.",
     "petitiondata"            : "Title for the Special:PetitionData page, where authorised users can download a list of all signatures.",
     "petition-data-intro"     : "Explanation and warning which appears on Special:PetitionData.",

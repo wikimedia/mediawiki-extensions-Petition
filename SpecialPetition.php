@@ -19,6 +19,12 @@ class SpecialPetition extends IncludableSpecialPage {
 		$this->setHeaders();
 		$this->outputHeader();
 
+		$user = $this->getUser();
+		if ( $user->isBlocked() ) {
+			$out->addWikiMsg( 'petition-form-blocked' );
+			return;
+		}
+
 		$out->addModules( 'ext.Petition' );
 
 		$countries = SpecialPetition::getCountryArray( $this->getLanguage()->getCode() );

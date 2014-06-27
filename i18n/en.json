@@ -15,6 +15,7 @@
     "petition-num-signatures" : "$1 {{PLURAL:$1|person has|people have}} signed already",
     "petition-form-submit"    : "Sign",
     "petition-form-required"  : "This field is required",
+    "petition-form-blocked"   : "You cannot sign this petition because you are currently blocked.",
     "petition-done"           : "Thank you. Your signature has been added.",
     "petitiondata"            : "Petition data download",
     "petition-data-intro"     : "Here you can download petition signatures as a CSV file. Note that this contains private info such as names and email addresses, and must be treated in accordance with the Wikimedia Foundation non-disclosure agreement.",
