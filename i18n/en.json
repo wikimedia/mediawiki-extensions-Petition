@@ -4,7 +4,8 @@
             "Pcoombe (WMF)"
         ]
     },
-    "petition-desc"           : "Adds a <nowiki><petition/></nowiki> tag to collect signatures, and a [[Special:PetitionData|special page]] for authorised users to download signatures as a csv file.",
+    "petition"                : "Sign petition",
+    "petition-desc"           : "Adds an includable page [[Special:Petition]] to collect signatures, and [[Special:PetitionData]] for authorised users to download signatures as a CSV file.",
     "petition-form-name"      : "Name",
     "petition-form-email"     : "Email address",
     "petition-form-country"   : "Country",

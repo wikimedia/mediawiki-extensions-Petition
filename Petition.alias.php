@@ -10,6 +10,7 @@ $specialPageAliases = array();
 
 /** English */
 $specialPageAliases['en'] = array(
+	'Petition' => array( 'Petition' ),
 	'PetitionData' => array( 'PetitionData' )
 );
 

@@ -1,44 +1,48 @@
 <?php
-class Petition {
 
-	public static function onParserInit( Parser $parser ) {
-		$parser->setHook( 'petition', array( __CLASS__, 'petitionRender' ) );
-		return true;
+class SpecialPetition extends IncludableSpecialPage {
+	function __construct() {
+		parent::__construct( 'Petition' );
 	}
 
-	public static function petitionRender( $input, array $args, Parser $parser, PPFrame $frame ) {
-		global $wgRequest;
+	function execute($par) {
 
-		// Can have multiple named petitions using <petition name="foo"/>
-		$petitionName = isset($args['name']) ? $args['name'] : 'default';
-		// Optional "linksource" URL parameter, to track how people arrived at petition
-		$linkSource = $wgRequest->getVal( 'linksource' );
+		$request = $this->getRequest();
+		$out = $this->getOutput();
 
-		$parser->disableCache(); // Need cache disabled for number of signatures to update, and for thank you message
+		// Can have multiple named petitions using {{Special:Petition/foo}}
+		// Can also specify am optional tracking parameter e.g. {{Special:Petition/foo/email}}
+		$arr = explode('/', $par);
+		$petitionName = isset($arr[0]) ? $arr[0] : 'default';
+		$source = isset($arr[1]) ? $arr[1] : '';
 
-		$parser->getOutput()->addModules( 'ext.Petition' );
+		$this->setHeaders();
+		$this->outputHeader();
 
-		$countries = Petition::getCountryArray( $parser->getOptions()->getUserLang() );
-		$form = Petition::defineForm( $petitionName, $parser->getTitle()->getPrefixedText(), $linkSource, $countries );
+		$out->addModules( 'ext.Petition' );
+
+		$countries = SpecialPetition::getCountryArray( $this->getLanguage()->getCode() );
+		$form = SpecialPetition::defineForm( $petitionName, $source, $countries );
 
 		$form->prepareForm();
 
 		$result = $form->tryAuthorizedSubmit();
+
 		if ( $result === true || ( $result instanceof Status && $result->isGood() ) ) {
-			return '<span class="petition-done">' . wfMessage('petition-done')->text() . '</span>';
+			$htmlOut = '<span class="petition-done">' . wfMessage('petition-done')->text() . '</span>';
+		} else {
+			$htmlOut = '<div class="petition-form">' . "\n";
+			$numberOfSignatures = SpecialPetition::getNumberOfSignatures( $petitionName );
+			$htmlOut .= '<div id="petition-num-signatures">';
+			$htmlOut .= wfMessage('petition-num-signatures', $numberOfSignatures)->escaped();
+			$htmlOut .= '</div>' . "\n";
+			// Add the form, with any errors if there was an attempted submission
+			$htmlOut .= $form->getHtml($result) . "\n";
+			$htmlOut .= '</div>' . "\n";
 		}
 
-		$htmlOut = '<div class="petition-form">' . "\n";
-		// Add the number of signatures first above the form.
-		$numberOfSignatures = Petition::getNumberOfSignatures( $petitionName );
-		$htmlOut .= '<div id="petition-num-signatures">';
-		$htmlOut .= wfMessage('petition-num-signatures', $numberOfSignatures)->escaped();
-		$htmlOut .= '</div>' . "\n";
-		// Add the form, with any errors if there was an attempted submission
-		$htmlOut .= $form->getHtml($result) . "\n";
-		$htmlOut .= '</div>' . "\n";
+		$out->addHtml($htmlOut);
 
-		return $htmlOut;
 	}
 
 	/**
@@ -53,8 +57,7 @@ class Petition {
 		$dbw = wfGetDB( DB_MASTER, array(), $wgPetitionDatabase );
 		$dbw->insert( 'petition_data', array(
 				'pt_petitionname' => $formData['petitionname'],
-				'pt_pagetitle'    => $formData['pagetitle'],
-				'pt_source'       => $formData['linksource'],
+				'pt_source'       => $formData['source'],
 				'pt_name'         => $formData['name'],
 				'pt_email'        => $formData['email'],
 				'pt_country'      => $formData['country'],
@@ -84,7 +87,6 @@ class Petition {
 
 	/**
 	 * Retrieve the list of countries in given language via CLDR
-	 * If CLDR not available, use a fallback list in English
 	 *
 	 * @param string $language ISO code of required language
 	 * @return array Countries with names as keys and ISO codes as values
@@ -102,19 +104,15 @@ class Petition {
 		return $countries;
 	}
 
-	static function defineForm( $petitionName, $pageTitle, $linkSource, $countries ) {
+	static function defineForm( $petitionName, $source, $countries ) {
 		$formDescriptor = array(
 			'petitionname' => array(
 				'type' => 'hidden',
 				'default' => $petitionName,
 			),
-			'pagetitle' => array(
+			'source' => array(
 				'type' => 'hidden',
-				'default' => $pageTitle,
-			),
-			'linksource' => array(
-				'type' => 'hidden',
-				'default' => $linkSource,
+				'default' => $source,
 			),
 			'name' => array(
 				'type' => 'text',
@@ -153,7 +151,7 @@ class Petition {
 		$form->setDisplayFormat( 'vform' );
 		$form->setId( 'petition-form' );
 		$form->setSubmitText( wfMessage( 'petition-form-submit' )->text() );
-		$form->setSubmitCallback( array( 'Petition', 'petitionSubmit' ) );
+		$form->setSubmitCallback( array( 'SpecialPetition', 'petitionSubmit' ) );
 
 		return $form;
 	}

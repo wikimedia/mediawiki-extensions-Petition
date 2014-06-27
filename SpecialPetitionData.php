@@ -34,7 +34,7 @@ class SpecialPetitionData extends SpecialPage {
 		$this->getRequest()->response()->header( "Content-type: text/csv; charset=utf-8" );
 		$fh = fopen( 'php://output', 'w' );
 
-		fputcsv( $fh, array('id', 'petitionname', 'pagetitle', 'source', 'name',
+		fputcsv( $fh, array('id', 'petitionname', 'source', 'name',
 			'email', 'country', 'message', 'share', 'timestamp'));
 
 		foreach( $res as $row ) {

@@ -18,13 +18,13 @@ $wgResourceModules['ext.Petition'] = array(
 	'dependencies'  => 'mediawiki.ui'
 );
 
+## Petition form
+$wgAutoloadClasses['SpecialPetition'] = __DIR__ . "/SpecialPetition.php";
+$wgSpecialPages['Petition'] = 'SpecialPetition';
+
 ## Petition data download page
 $wgAutoloadClasses['SpecialPetitionData'] = __DIR__ . "/SpecialPetitionData.php";
 $wgSpecialPages['PetitionData'] = 'SpecialPetitionData';
-
-## Petition tag
-$wgAutoloadClasses['Petition'] = __DIR__ . '/TagPetition.php';
-$wgHooks['ParserFirstCallInit'][] = 'Petition::onParserInit';
 
 $wgMessagesDirs['Petition'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['PetitionDataAlias'] = __DIR__ . '/Petition.alias.php';

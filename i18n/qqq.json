@@ -4,6 +4,7 @@
             "Pcoombe (WMF)"
         ]
     },
+    "petition"                : "Title for Special:Petition page (not usually seen as it is transcluded on other pages)",
     "petition-desc"           : "Description of Extension:Petition",
     "petition-form-name"      : "Label for field to input name",
     "petition-form-email"     : "Label for field to input email address",
