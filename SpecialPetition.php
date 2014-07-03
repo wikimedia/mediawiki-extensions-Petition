@@ -29,6 +29,7 @@ class SpecialPetition extends IncludableSpecialPage {
 
 		$countries = SpecialPetition::getCountryArray( $this->getLanguage()->getCode() );
 		$form = SpecialPetition::defineForm( $petitionName, $source, $countries );
+		$form->setSubmitCallback( array( $this, 'petitionSubmit' ) );
 
 		$form->prepareForm();
 
@@ -57,8 +58,12 @@ class SpecialPetition extends IncludableSpecialPage {
 	 * @param $formData
 	 * @return true if success
 	 */
-	static function petitionSubmit( $formData ) {
+	function petitionSubmit( $formData ) {
 		global $wgPetitionDatabase;
+
+		if ( $this->getUser()->pingLimiter( 'edit' ) ) {
+			return wfMessage('actionthrottledtext')->text();
+		}
 
 		$dbw = wfGetDB( DB_MASTER, array(), $wgPetitionDatabase );
 		$dbw->insert( 'petition_data', array(
@@ -157,7 +162,6 @@ class SpecialPetition extends IncludableSpecialPage {
 		$form->setDisplayFormat( 'vform' );
 		$form->setId( 'petition-form' );
 		$form->setSubmitText( wfMessage( 'petition-form-submit' )->text() );
-		$form->setSubmitCallback( array( 'SpecialPetition', 'petitionSubmit' ) );
 
 		return $form;
 	}
