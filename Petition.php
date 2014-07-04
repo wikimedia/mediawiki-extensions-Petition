@@ -36,3 +36,13 @@ $wgHooks['LoadExtensionSchemaUpdates'][] = function( DatabaseUpdater $updater ) 
 	$updater->addExtensionTable( 'petition_data', __DIR__ . '/table.sql', true );
 	return true;
 };
+
+/**
+ * Options:
+ *
+ * $wgPetitionCountCacheTime
+ * 	time in seconds that the number of signatures count will be cached
+ * 	in memcached (if available). Default is 86400 i.e. 24 hours
+ */
+
+$wgPetitionCountCacheTime = 86400;

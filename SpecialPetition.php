@@ -59,7 +59,7 @@ class SpecialPetition extends IncludableSpecialPage {
 	 * @return true if success
 	 */
 	function petitionSubmit( $formData ) {
-		global $wgPetitionDatabase;
+		global $wgPetitionDatabase, $wgMemc, $wgPetitionCountCacheTime;
 
 		if ( $this->getUser()->pingLimiter( 'edit' ) ) {
 			return wfMessage('actionthrottledtext')->text();
@@ -78,6 +78,17 @@ class SpecialPetition extends IncludableSpecialPage {
 				),
 			__METHOD__ );
 
+		// Update the cached number of signatures
+		$key = wfMemcKey( 'petition', md5($formData['petitionname']), 'numsignatures' );
+
+		$wgMemc->merge( $key, function( $cache, $key, $num ) {
+			if ( $num !== false ) {
+				return $num + 1;
+			} else {
+				return false;
+			}
+		} , $wgPetitionCountCacheTime );
+
 		return true;
 	}
 
@@ -88,11 +99,25 @@ class SpecialPetition extends IncludableSpecialPage {
 	 * @return int The current number of signatures
 	 */
 	static function getNumberOfSignatures( $petitionName ) {
-		$dbr = wfGetDB( DB_SLAVE );
-		$num = $dbr->selectField( 'petition_data',
-			'count(pt_id)',
-			array('pt_petitionname' => $petitionName)
-			);
+		global $wgMemc, $wgPetitionCountCacheTime;
+
+		// Try cache first
+		$key = wfMemcKey( 'petition', md5($petitionName), 'numsignatures' );
+		$num = $wgMemc->get( $key );
+
+		if ( $num === false ) {
+
+			// Not in cache, need to check the database
+			$wgMemc->lock( $key );
+			$dbr = wfGetDB( DB_SLAVE );
+			$num = $dbr->selectField( 'petition_data',
+				'count(pt_id)',
+				array('pt_petitionname' => $petitionName)
+				);
+			$wgMemc->add( $key, $num, $wgPetitionCountCacheTime );
+			$wgMemc->unlock( $key );
+		}
+
 		return $num;
 	}
 
