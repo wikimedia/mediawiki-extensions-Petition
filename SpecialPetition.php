@@ -89,6 +89,21 @@ class SpecialPetition extends IncludableSpecialPage {
 			}
 		} , $wgPetitionCountCacheTime );
 
+		// Log signature
+		$entry = new ManualLogEntry( 'petition', 'sign' );
+		$entry->setPerformer( $this->getUser() );
+		$entry->setTarget( SpecialPage::getTitleFor( 'Petition' ) );
+		$entry->setParameters( array(
+			'4::petitionname' => $formData['petitionname']
+		) );
+		$entry->insert();
+
+		// And if CheckUser is installed, give it a heads up
+		if ( is_callable( 'CheckUserHooks::updateCheckUserData' ) ) {
+			$rc = $entry->getRecentChange();
+			CheckUserHooks::updateCheckUserData( $rc );
+		}
+
 		return true;
 	}
 

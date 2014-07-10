@@ -20,5 +20,9 @@
     "petitiondata"            : "Title for the Special:PetitionData page, where authorised users can download a list of all signatures.",
     "petition-data-intro"     : "Explanation and warning which appears on Special:PetitionData.",
     "petition-data-download"  : "Button on Special:PetitionData to download the list of all signatures.",
-    "action-view-petition-data" : "{{doc-action|view-petition-data}}"
+    "action-view-petition-data" : "{{doc-action|view-petition-data}}",
+    "right-view-petition-data": "{{doc-right|view-petition-data}}",
+    "log-name-petition"       : "Log page title",
+    "log-description-petition": "Log page description",
+    "logentry-petition-sign"  : "{{logentry}}\n* $1 is the username or IP address\n* $2 is the user's gender\n* $4 is the name of the petition which was signed"
 }

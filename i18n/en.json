@@ -20,5 +20,9 @@
     "petitiondata"            : "Petition data download",
     "petition-data-intro"     : "Here you can download petition signatures as a CSV file. Note that this contains private info such as names and email addresses, and must be treated in accordance with the Wikimedia Foundation non-disclosure agreement.",
     "petition-data-download"  : "Download as CSV",
-    "action-view-petition-data" : "view petition data"
+    "action-view-petition-data" : "view petition data",
+    "right-view-petition-data": "View petition data",
+    "log-name-petition"       : "Petition signatures log",
+    "log-description-petition": "Tracks signatures of petitions.",
+    "logentry-petition-sign"  : "$1 {{GENDER:$2|signed}} petition \"$4\""
 }

@@ -31,6 +31,11 @@ $wgExtensionMessagesFiles['PetitionDataAlias'] = __DIR__ . '/Petition.alias.php'
 
 $wgPetitionDatabase = false;
 
+$wgLogTypes[] = 'petition';
+$wgLogActionsHandlers['petition/sign'] = 'LogFormatter';
+
+$wgLogRestrictions['petition'] = 'view-petition-data';
+
 # Schema updates for update.php
 $wgHooks['LoadExtensionSchemaUpdates'][] = function( DatabaseUpdater $updater ) {
 	$updater->addExtensionTable( 'petition_data', __DIR__ . '/table.sql', true );
