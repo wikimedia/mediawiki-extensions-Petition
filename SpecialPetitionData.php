@@ -42,7 +42,6 @@ class SpecialPetitionData extends SpecialPage {
 			fputcsv( $fh, array(
 				$row->pt_id,
 				preg_replace("/^=/", "'=", $row->pt_petitionname),
-				preg_replace("/^=/", "'=", $row->pt_pagetitle),
 				preg_replace("/^=/", "'=", $row->pt_source),
 				preg_replace("/^=/", "'=", $row->pt_name),
 				preg_replace("/^=/", "'=", $row->pt_email),
