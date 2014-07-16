@@ -30,8 +30,15 @@ class SpecialPetitionData extends SpecialPage {
 		$filename = "petition_data_$ts.csv";
 		$this->getOutput()->disable();
 		wfResetOutputBuffers();
-		$this->getRequest()->response()->header( "Content-disposition: attachment;filename={$filename}" );
-		$this->getRequest()->response()->header( "Content-type: text/csv; charset=utf-8" );
+		$response = $this->getRequest()->response();
+
+		// Explicitly disable caching, just to be sure
+		$response->header( 'Expires: ' . gmdate( 'D, d M Y H:i:s', 0 ) . ' GMT' );
+		$response->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
+		$response->header( 'Pragma: no-cache' );
+
+		$response->header( "Content-disposition: attachment;filename={$filename}" );
+		$response->header( "Content-type: text/csv; charset=utf-8" );
 		$fh = fopen( 'php://output', 'w' );
 
 		fputcsv( $fh, array('id', 'petitionname', 'source', 'name',
