@@ -22,6 +22,7 @@
     "petition-data-download"  : "Download as CSV",
     "action-view-petition-data" : "view petition data",
     "right-view-petition-data": "View petition data",
+    "group-petitiondata"      : "Petition data viewers",
     "log-name-petition"       : "Petition signatures log",
     "log-description-petition": "Tracks signatures of petitions.",
     "logentry-petition-sign"  : "$1 {{GENDER:$2|signed}} petition \"$4\""

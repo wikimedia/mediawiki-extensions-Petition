@@ -42,6 +42,9 @@ $wgHooks['LoadExtensionSchemaUpdates'][] = function( DatabaseUpdater $updater ) 
 	return true;
 };
 
+$wgGroupPermissions['petitiondata']['view-petition-data'] = true;
+$wgAvailableRights[] = 'view-petition-data';
+
 /**
  * Options:
  *
