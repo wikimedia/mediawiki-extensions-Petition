@@ -149,7 +149,7 @@ class SpecialPetition extends IncludableSpecialPage {
 			$countries = array_flip( CountryNames::getNames( $language ) );
 			ksort($countries);
 		} else {
-			throw new MWException( 'Petition requires Extension:CLDR to be installed.' );
+			throw new Exception( 'Petition requires Extension:CLDR to be installed.' );
 		}
 
 		return $countries;
