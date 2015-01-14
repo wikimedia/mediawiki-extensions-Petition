@@ -198,8 +198,7 @@ class SpecialPetition extends IncludableSpecialPage {
 			),
 		);
 
-		$form = new HTMLForm( $formDescriptor, RequestContext::getMain(), 'petition' );
-		$form->setDisplayFormat( 'vform' );
+		$form = HTMLForm::factory( 'vform', $formDescriptor, RequestContext::getMain(), 'petition' );
 		$form->setId( 'petition-form' );
 		$form->setSubmitText( wfMessage( 'petition-form-submit' )->text() );
 
