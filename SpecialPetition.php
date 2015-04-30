@@ -59,7 +59,7 @@ class SpecialPetition extends IncludableSpecialPage {
 	 * @return true if success
 	 */
 	function petitionSubmit( $formData ) {
-		global $wgPetitionDatabase, $wgMemc, $wgPetitionCountCacheTime;
+		global $wgPetitionDatabase;
 
 		if ( $this->getUser()->pingLimiter( 'edit' ) ) {
 			return wfMessage('actionthrottledtext')->text();
@@ -79,15 +79,9 @@ class SpecialPetition extends IncludableSpecialPage {
 			__METHOD__ );
 
 		// Update the cached number of signatures
+		$cache = ObjectCache::getMainWANInstance();
 		$key = wfMemcKey( 'petition', md5($formData['petitionname']), 'numsignatures' );
-
-		$wgMemc->merge( $key, function( $cache, $key, $num ) {
-			if ( $num !== false ) {
-				return $num + 1;
-			} else {
-				return false;
-			}
-		} , $wgPetitionCountCacheTime );
+		$cache->touchCheckKey( $key );
 
 		// Log signature
 		$entry = new ManualLogEntry( 'petition', 'sign' );
@@ -114,26 +108,24 @@ class SpecialPetition extends IncludableSpecialPage {
 	 * @return int The current number of signatures
 	 */
 	static function getNumberOfSignatures( $petitionName ) {
-		global $wgMemc, $wgPetitionCountCacheTime;
+		global $wgPetitionCountCacheTime;
 
-		// Try cache first
-		$key = wfMemcKey( 'petition', md5($petitionName), 'numsignatures' );
-		$num = $wgMemc->get( $key );
+		$cache = ObjectCache::getMainWANInstance();
+		$key = wfMemcKey( 'petition', md5( $petitionName ), 'numsignatures' );
 
-		if ( $num === false ) {
-
-			// Not in cache, need to check the database
-			$wgMemc->lock( $key );
-			$dbr = wfGetDB( DB_SLAVE );
-			$num = $dbr->selectField( 'petition_data',
-				'count(pt_id)',
-				array('pt_petitionname' => $petitionName)
+		return $cache->getWithSetCallback(
+			$key,
+			function() use ( $petitionName ) {
+				$dbr = wfGetDB( DB_SLAVE );
+				return $dbr->selectField( 'petition_data',
+					'count(pt_id)',
+					array( 'pt_petitionname' => $petitionName )
 				);
-			$wgMemc->add( $key, $num, $wgPetitionCountCacheTime );
-			$wgMemc->unlock( $key );
-		}
-
-		return $num;
+			},
+			$wgPetitionCountCacheTime,
+			array( $key ),
+			array( 'lockTSE' => 10 )
+		);
 	}
 
 	/**
@@ -141,6 +133,7 @@ class SpecialPetition extends IncludableSpecialPage {
 	 *
 	 * @param string $language ISO code of required language
 	 * @return array Countries with names as keys and ISO codes as values
+	 * @throws Exception
 	 */
 	static function getCountryArray( $language ) {
 		$countries = array();
