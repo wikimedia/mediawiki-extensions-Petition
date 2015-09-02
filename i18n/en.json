@@ -1,29 +1,29 @@
 {
-    "@metadata": {
-        "authors": [
-            "Pcoombe (WMF)"
-        ]
-    },
-    "petition"                : "Sign petition",
-    "petition-desc"           : "Adds an includable page [[Special:Petition]] to collect signatures, and [[Special:PetitionData]] for authorised users to download signatures as a CSV file.",
-    "petition-form-name"      : "Name",
-    "petition-form-email"     : "Email address",
-    "petition-form-country"   : "Country",
-    "petition-form-message"   : "Personal message (optional)",
-    "petition-form-share"     : "Check this box if we may display your name, country and personal message publicly, and to release your personal message under a [//creativecommons.org/publicdomain/zero/1.0/ CC0 license] (optional).",
-    "petition-form-privacy"   : "The Wikimedia Foundation may use this email address to let you know how this campaign is going or tell you about other campaigns. We will never sell your information to others or use it to advertise to you. We value your privacy, and the information you submit here is covered by our [[wikimedia:Privacy Policy|Privacy Policy]].",
-    "petition-num-signatures" : "$1 {{PLURAL:$1|person has|people have}} signed already",
-    "petition-form-submit"    : "Sign",
-    "petition-form-required"  : "This field is required",
-    "petition-form-blocked"   : "You cannot sign this petition because you are currently blocked.",
-    "petition-done"           : "Thank you. Your signature has been added.",
-    "petitiondata"            : "Petition data download",
-    "petition-data-intro"     : "Here you can download petition signatures as a CSV file. Note that this contains private info such as names and email addresses, and must be treated in accordance with the Wikimedia Foundation non-disclosure agreement.",
-    "petition-data-download"  : "Download as CSV",
-    "action-view-petition-data" : "view petition data",
-    "right-view-petition-data": "View petition data",
-    "group-petitiondata"      : "Petition data viewers",
-    "log-name-petition"       : "Petition signatures log",
-    "log-description-petition": "Tracks signatures of petitions.",
-    "logentry-petition-sign"  : "$1 {{GENDER:$2|signed}} petition \"$4\""
+	"@metadata": {
+		"authors": [
+			"Pcoombe (WMF)"
+		]
+	},
+	"petition"                : "Sign petition",
+	"petition-desc"           : "Adds an includable page [[Special:Petition]] to collect signatures, and [[Special:PetitionData]] for authorised users to download signatures as a CSV file.",
+	"petition-form-name"      : "Name",
+	"petition-form-email"     : "Email address",
+	"petition-form-country"   : "Country",
+	"petition-form-message"   : "Personal message (optional)",
+	"petition-form-share"     : "Check this box if we may display your name, country and personal message publicly, and to release your personal message under a [//creativecommons.org/publicdomain/zero/1.0/ CC0 license] (optional).",
+	"petition-form-privacy"   : "The Wikimedia Foundation may use this email address to let you know how this campaign is going or tell you about other campaigns. We will never sell your information to others or use it to advertise to you. We value your privacy, and the information you submit here is covered by our [[wikimedia:Privacy Policy|Privacy Policy]].",
+	"petition-num-signatures" : "$1 {{PLURAL:$1|person has|people have}} signed already",
+	"petition-form-submit"    : "Sign",
+	"petition-form-required"  : "This field is required",
+	"petition-form-blocked"   : "You cannot sign this petition because you are currently blocked.",
+	"petition-done"           : "Thank you. Your signature has been added.",
+	"petitiondata"            : "Petition data download",
+	"petition-data-intro"     : "Here you can download petition signatures as a CSV file. Note that this contains private info such as names and email addresses, and must be treated in accordance with the Wikimedia Foundation non-disclosure agreement.",
+	"petition-data-download"  : "Download as CSV",
+	"action-view-petition-data" : "view petition data",
+	"right-view-petition-data": "View petition data",
+	"group-petitiondata"      : "Petition data viewers",
+	"log-name-petition"       : "Petition signatures log",
+	"log-description-petition": "Tracks signatures of petitions.",
+	"logentry-petition-sign"  : "$1 {{GENDER:$2|signed}} petition \"$4\""
 }
