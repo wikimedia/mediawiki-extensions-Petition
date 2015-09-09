@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Metalhead64"
+		]
+	},
+	"petition": "Petition unterzeichnen",
+	"petition-desc": "Ergänzt eine [[Special:Petition|einbindbare Seite]] zum Sammeln von Signaturen und für berechtigte Benutzer die Möglichkeit, [[Special:PetitionData|Signaturen als CSV-Datei herunterzuladen]].",
+	"petition-form-name": "Name",
+	"petition-form-email": "E-Mail-Adresse",
+	"petition-form-country": "Staat",
+	"petition-form-message": "Persönliche Nachricht (optional)",
+	"petition-form-share": "Markiere dieses Kästchen, falls wir deinen Namen, Staat und deine persönliche Nachricht öffentlich anzeigen und deine Nachricht unter einer [//creativecommons.org/publicdomain/zero/1.0/deed.de CC0-Lizenz] veröffentlichen dürfen (optional).",
+	"petition-form-privacy": "Die Wikimedia Foundation kann diese E-Mail verwenden, um dich wissen zu lassen, wie diese Kampagne läuft oder um dir von anderen Kampagnen zu erzählen. Wir verkaufen niemals deine Informationen an andere oder verwenden sie nicht, um Werbung an dich zu versenden. Wir schätzen deinen Datenschutz und deine hier eingereichten Informationen unterliegen unserer [[wikimedia:Privacy Policy|Datenschutzrichtlinie]].",
+	"petition-num-signatures": "{{PLURAL:$1|Eine Person hat|$1 Personen haben}} bereits unterzeichnet",
+	"petition-form-submit": "Unterzeichnen",
+	"petition-form-required": "Dieses Feld ist erforderlich",
+	"petition-form-blocked": "Du kannst diese Petition nicht unterzeichnen, da du derzeit gesperrt bist.",
+	"petition-done": "Vielen Dank. Deine Signatur wurde hinzugefügt.",
+	"petitiondata": "Herunterladen von Petitionsdaten",
+	"petition-data-intro": "Hier kannst du Petitionssignaturen als eine CSV-Datei herunterladen. Beachte bitte, dass diese private Informationen wie Namen und E-Mail-Adressen enthält und in Übereinstimmung mit der Geheimhaltungserklärung der Wikimedia Foundation behandelt werden muss.",
+	"petition-data-download": "Als CSV herunterladen",
+	"action-view-petition-data": "Petitionsdaten anzusehen",
+	"right-view-petition-data": "Petitionsdaten ansehen",
+	"group-petitiondata": "Petitionsdatenbetrachter",
+	"log-name-petition": "Petition-Signatur-Logbuch",
+	"log-description-petition": "Dies ist das Logbuch der Signaturen für Petitionen.",
+	"logentry-petition-sign": "$1 {{GENDER:$2|unterzeichnete}} die Petition „$4“"
+}
