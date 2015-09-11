@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Macofe"
+		]
+	},
+	"petition-form-name": "Nome",
+	"petition-form-email": "Indirizzo email",
+	"petition-form-country": "Nazione"
+}

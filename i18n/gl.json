@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Elisardojm"
+		]
+	},
+	"petition": "Firmar petición",
+	"petition-form-name": "Nome",
+	"petition-form-email": "Enderezo de correo electrónico",
+	"petition-form-country": "País",
+	"petition-form-message": "Mensaxe persoal (opcional)",
+	"petition-num-signatures": "$1 {{PLURAL:$1|persoa asinou|persoas asinaron}} xa",
+	"petition-form-submit": "Asinar",
+	"petition-form-required": "Este campo é obrigatorio",
+	"petition-form-blocked": "Non pode asinar esta petición porque actualmente está bloqueado.",
+	"petition-done": "Grazas. A súa sinatura foi engadida.",
+	"petition-data-download": "Descargar como CSV"
+}

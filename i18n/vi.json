@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Minh Nguyen"
+		]
+	},
+	"petition": "Ký kiến nghị",
+	"petition-desc": "Thêm một [[Special:Petition|trang có thể nhúng]] cho phép thu thập chữ ký và cho phép những người được quyền [[Special:PetitionData|tải về các chữ ký]] ở dạng tập tin CSV.",
+	"petition-form-name": "Tên",
+	"petition-form-email": "Địa chỉ thư điện tử",
+	"petition-form-country": "Quốc gia",
+	"petition-form-message": "Thông điệp cá nhân (tùy chọn)",
+	"petition-form-share": "Đánh dấu hộp kiểm này nếu chúng tôi được phép trình bày tên, quốc gia, và thông điệp cá nhân của bạn một cách công khai và phát hành thông điệp cá nhân của bạn theo [//creativecommons.org/publicdomain/zero/1.0/deed.vi giấy phép CC0] (tùy chọn).",
+	"petition-form-privacy": "Quỹ Wikimedia có thể sử dụng địa chỉ thư điện tử này để cho bạn biết cuộc chiến dịch này đang xảy ra như thế nào hoặc về các chiến dịch khác. Chúng tôi sẽ không bao giờ bán thông tin của bạn cho người khác hoặc sử dụng nó để hiển thị quảng cáo cho bạn. Chúng tôi chú trọng về quyền riêng tư của bạn, và các thông tin mà bạn gửi từ trang này tuân theo [[wikimedia:Privacy Policy|Quy định về quyền riêng tư]] của chúng tôi.",
+	"petition-num-signatures": "$1 người đã ký tên rồi",
+	"petition-form-submit": "Ký tên",
+	"petition-form-required": "Thông tin này là bắt buộc",
+	"petition-form-blocked": "Bạn không thể ký kiến nghị này vì bạn đang bị cấm.",
+	"petition-done": "Cảm ơn. Chữ ký của bạn đã được thêm vào.",
+	"petitiondata": "Tải về dữ liệu kiến nghị",
+	"petition-data-intro": "Ở đây bạn có thể tải về các chữ ký kiến nghị ở dạng tập tin CSV. Lưu ý rằng tập tin này sẽ chứa các thông tin cá nhân như tên và địa chỉ thư điện tử, nên bạn phải xử lý nó theo đúng thỏa thuận bảo mật thông tin của Quỹ Wikimedia.",
+	"petition-data-download": "Tải về ở dạng CSV",
+	"action-view-petition-data": "xem dữ liệu kiến nghị",
+	"right-view-petition-data": "Xem dữ liệu kiến nghị",
+	"group-petitiondata": "Người xem dữ liệu kiến nghị",
+	"log-name-petition": "Nhật trình ký kiến nghị",
+	"log-description-petition": "Nhật trình này có các lần ký kiến nghị.",
+	"logentry-petition-sign": "$1 {{GENDER:$2}}đã ký kiến nghị “$4”"
+}

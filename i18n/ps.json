@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ahmed-Najib-Biabani-Ibrahimkhel"
+		]
+	},
+	"petition-form-name": "نوم",
+	"petition-form-email": "برېښليک پته",
+	"petition-form-country": "هېواد",
+	"petition-form-message": "شخصي پيغام (ستاسې په خوښه)",
+	"petition-form-submit": "لاسليکول",
+	"petition-form-required": "دې ډاگي ته اړتيا ده",
+	"petition-data-download": "د CSV په ډول ښکته کول"
+}

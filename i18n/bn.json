@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aftabuzzaman"
+		]
+	},
+	"petition": "আবেদনে স্বাক্ষর করুন",
+	"petition-form-name": "নাম",
+	"petition-form-email": "ইমেইল ঠিকানা",
+	"petition-form-country": "দেশ",
+	"petition-form-message": "ব্যক্তিগত বার্তা (ঐচ্ছিক)",
+	"petition-num-signatures": "$1 {{PLURAL:$1|জন ব্যক্তি}} ইতিমধ্যে স্বাক্ষর করেছেন",
+	"petition-form-submit": "স্বাক্ষর",
+	"petition-data-download": "CSV হিসাবে ডাউনলোড করুন",
+	"logentry-petition-sign": "$1 \"$4\" আবেদনে {{GENDER:$2|স্বাক্ষর করেছেন}}"
+}

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sujiniku"
+		]
+	},
+	"petition-form-name": "名前",
+	"petition-form-email": "メールアドレス",
+	"petition-form-required": "この欄は必須です",
+	"petition-data-download": "CSVとしてダウンロード"
+}

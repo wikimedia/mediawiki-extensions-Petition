@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"petition": "Petitioun ënnerschreiwen",
+	"petition-form-name": "Numm",
+	"petition-form-email": "E-Mail-Adress",
+	"petition-form-country": "Land",
+	"petition-form-message": "Perséinleche Message (fakultativ)",
+	"petition-form-submit": "Ënnerschreiwen",
+	"petition-form-required": "Dëst Feld ass obligatoresch",
+	"petition-data-download": "Als csv eroflueden"
+}

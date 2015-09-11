@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"petition": "חתימה על עצומה",
+	"petition-desc": "הוספת [[Special:Petition|דף בר־הכללה]] לאיסוף חתימות, ול[[Special:PetitionData|הורדת חתימות]] בתור קובץ CSV למשתמשים מורשים.",
+	"petition-form-name": "שם",
+	"petition-form-email": "כתובת דוא\"ל",
+	"petition-form-country": "ארץ",
+	"petition-form-message": "הודעה אישית (לא חובה)",
+	"petition-form-share": "נא לסמן את התיבה הזאת אם מותר לנו להציג את שמך, ארצך והודעתך האישית באופן ציבורי, ולפרסם את ההודעה האישית שלך לפי [//creativecommons.org/publicdomain/zero/1.0/ רישיון CC0] (לא חובה).",
+	"petition-form-privacy": "קרן ויקימדיה יכולה להשתמש בכתובת הדוא\"ל הזאת כדי לספר לך איך המבצע הזה מתקדם או לספר לך על מבצעים אחרים. לעולם לא נמכור את המידע שלך לאחרים או נשתמש בו כדי לשלוח לך פרסומות. אנחנו מעריכים את הפרטיות שלך והמידע שנשלח כאן מכוסה ב[[wikimedia:Privacy Policy|מדיניות הפרטיות]] שלנו.",
+	"petition-num-signatures": "{{PLURAL:$1|אדם אחד כבר חתם|$1 אנשים כבר חתמו}}",
+	"petition-form-submit": "לחתום",
+	"petition-form-required": "חובה למלא את השדה הזה",
+	"petition-form-blocked": "אין באפשרותך לחתום על העצומה הזאת כי נחסמת",
+	"petition-done": "תודה. החתימה שלך נוספה.",
+	"petitiondata": "הורדת נתוני עצומה",
+	"petition-data-intro": "כאן אפשר להוריד חתימות על עצומה לקובץ CSV. נא לשים לב לכך שיש כאן מידע פרטי כגון שמות וכתובות דוא\"ל ויש  להתייחס לזה בהתאם להסכם הסודיות של קרן ויקימדיה.",
+	"petition-data-download": "הורדה כקובץ CSV",
+	"action-view-petition-data": "להציג נתוני עצומה",
+	"right-view-petition-data": "הצגת נתוני עצומה",
+	"group-petitiondata": "מציגי נתוני עצומה",
+	"log-name-petition": "יומן חתימות על עצומה",
+	"log-description-petition": "מעקב אחרי חתימות על עצומות.",
+	"logentry-petition-sign": "$1 {{GENDER:$2|חתם|חתמה}} על העצומה \"$4\""
+}

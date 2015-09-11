@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226"
+		]
+	},
+	"petition": "签署请愿书",
+	"petition-desc": "添加一个[[Special:Petition|可包括在内的页面]]以收集签名，并面向授权用户将签名[[Special:PetitionData|下载]]为CSV文件。",
+	"petition-form-name": "姓名",
+	"petition-form-email": "电子邮件地址",
+	"petition-form-country": "国家",
+	"petition-form-message": "个人信息（可选）",
+	"petition-form-share": "如果我们可能公开显示您的姓名、国家和个人信息，并将您的个人信息根据[//creativecommons.org/publicdomain/zero/1.0/deed.zh CC0许可协议]发表的话，请点击此框（可选）。",
+	"petition-form-privacy": "维基媒体基金会可能使用此电子邮件地址以让您了解此通告是怎么做的，或告知您有关其他通告的事情。我们将不会出售您的信息至其他人，或使用它向您递送广告。我们重视您的隐私，并且您在此提交的信息受我们的[[wikimedia:Privacy Policy|隐私政策]]控制。",
+	"petition-num-signatures": "$1{{PLURAL:$1|个人}}已签名",
+	"petition-form-submit": "签名",
+	"petition-form-required": "此字段是必需的",
+	"petition-form-blocked": "您不能签署此请愿书，因为您当前被封禁。",
+	"petition-done": "感谢您。您的签名已被添加。",
+	"petitiondata": "请愿书数据下载",
+	"petition-data-intro": "在此您可以下载请愿书的签名为一个CSV文件。注意这包括私人信息例如姓名和电子邮件地址，并必须依照维基媒体基金会保密协议处理。",
+	"petition-data-download": "以CSV格式下载",
+	"action-view-petition-data": "查看请愿书数据",
+	"right-view-petition-data": "查看请愿书数据",
+	"group-petitiondata": "请愿书数据查看者",
+	"log-name-petition": "请愿书签名日志",
+	"log-description-petition": "追踪请愿书的签名。",
+	"logentry-petition-sign": "$1{{GENDER:$2|签署}}了请愿书“$4”"
+}

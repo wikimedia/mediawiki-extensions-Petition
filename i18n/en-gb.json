@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"petition-desc": "Adds an [[Special:Petition|includable page]] to collect signatures, and for authorised users to [[Special:PetitionData|download signatures]] as a CSV file."
+}

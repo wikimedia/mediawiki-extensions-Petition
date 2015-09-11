@@ -1,19 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
-			"Pcoombe (WMF)"
+			"Pcoombe (WMF)",
+			"Liuxinyu970226",
+			"Robby"
 		]
 	},
 	"petition": "Title for Special:Petition page (not usually seen as it is transcluded on other pages)",
 	"petition-desc": "Description of Extension:Petition",
-	"petition-form-name": "Label for field to input name",
-	"petition-form-email": "Label for field to input email address",
-	"petition-form-country": "Label for dropdown to select country",
+	"petition-form-name": "Label for field to input name\n{{Identical|Name}}",
+	"petition-form-email": "Label for field to input email address\n{{Identical|E-mail address}}",
+	"petition-form-country": "Label for dropdown to select country\n{{Identical|Country}}",
 	"petition-form-message": "Label for textarea for inputting optional personal message. This message may appear along with the user's signature.",
 	"petition-form-share": "Label for checkbox if the user wishes to share their name, country and personal message publicly. Checking this box is optional.",
 	"petition-form-privacy": "Message explaining to user how their information will be used.",
 	"petition-num-signatures": "Message including the total number of signatures on this petition so far.\nParameters:\n* $1 - number of signatures",
-	"petition-form-submit": "Button to submit signature",
+	"petition-form-submit": "Button to submit signature\n{{Identical|Sign}}",
 	"petition-form-required": "Message displayed to a user if a field is required, but not filled out when they try to submit.",
 	"petition-form-blocked": "Message displayed in place of the form if user is blocked",
 	"petition-done": "Message which appears in place of the form once a user's signature has been submitted successfully.",

@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Macofe"
+		]
+	},
+	"petition": "Firmar la petición",
+	"petition-desc": "Añade una [[Special:Petition|página incluible]] para recolectar firmas y para que los usuarios autorizados [[Special:PetitionData|descarguen firmas]] como un archivo CSV.",
+	"petition-form-name": "Nombre",
+	"petition-form-email": "Dirección de correo electrónico",
+	"petition-form-country": "País",
+	"petition-form-message": "Mensaje personal (opcional)",
+	"petition-form-share": "Marca esta casilla si podemos mostrar públicamente tu nombre, país y mensaje personal, y para publicar tu mensaje personal bajo la [//creativecommons.org/publicdomain/zero/1.0/ licencia CC0] (opcional).",
+	"petition-form-privacy": "La Fundación Wikimedia puede utilizar esta dirección de correo electrónico para hacerte saber cómo está yendo esta campaña o informarte acerca de otras campañas. Nunca venderemos tu información a terceros ni la utilizaremos para promocionarte. Valoramos tu privacidad, y la información que envías aquí está cubierta por nuestra [[wikimedia:Privacy Policy|Política de privacidad]].",
+	"petition-num-signatures": "Ya {{PLURAL:$1|ha firmado $1 persona|han firmado $1 personas}}",
+	"petition-form-submit": "Firmar",
+	"petition-form-required": "Este campo es obligatorio",
+	"petition-form-blocked": "No puedes firmar esta petición porque estás bloqueado actualmente.",
+	"petition-done": "Gracias. Tu firma se ha añadido.",
+	"petitiondata": "Descarga de los datos de la petición",
+	"petition-data-intro": "Aquí puedes descargar las firmas de la petición como un archivo CSV. Ten en cuenta que este contiene información privada, tales como los nombres y direcciones de correo electrónico, y deben ser tratada en conformidad con el acuerdo de no divulgación de la Fundación Wikimedia.",
+	"petition-data-download": "Descargar como CSV",
+	"action-view-petition-data": "ver datos de la petición",
+	"right-view-petition-data": "Ver datos de la petición",
+	"group-petitiondata": "Visores de los datos de las peticiones",
+	"log-name-petition": "Registro de firmas de peticiones",
+	"log-description-petition": "Sigue las firmas de peticiones.",
+	"logentry-petition-sign": "$1 {{GENDER:$2|firmó}} la petición \"$4\""
+}
