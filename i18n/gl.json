@@ -5,10 +5,12 @@
 		]
 	},
 	"petition": "Firmar petición",
+	"petition-desc": "Engade unha [[Special:Petition|páxina incrustada]] para recoller sinaturas e para que os usuarios autorizados [[Special:PetitionData|descarguen sinaturas]] como un ficheiro CSV.",
 	"petition-form-name": "Nome",
 	"petition-form-email": "Enderezo de correo electrónico",
 	"petition-form-country": "País",
 	"petition-form-message": "Mensaxe persoal (opcional)",
+	"petition-form-share": "Marque esta caixa se podemos mostrar públicamente o seu nome, país e mensaxe persoal, e para publicar a súa mensaxe persoal baixo a [//creativecommons.org/publicdomain/zero/1.0/ licenza CC0] (opcional).",
 	"petition-num-signatures": "$1 {{PLURAL:$1|persoa asinou|persoas asinaron}} xa",
 	"petition-form-submit": "Asinar",
 	"petition-form-required": "Este campo é obrigatorio",
