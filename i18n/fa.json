@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Reza1615"
+		]
+	},
+	"petition-form-name": "نام",
+	"petition-form-email": "نشانی رایانامه",
+	"petition-form-country": "کشور",
+	"petition-form-required": "این گزینه الزامی‌است"
+}
