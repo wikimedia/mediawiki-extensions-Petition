@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"petition-form-name": "Nazwa",
+	"petition-form-email": "Adres e‐mail",
+	"petition-form-country": "Państwo",
+	"petition-form-required": "Wypełnienie tego pola jest obowiązkowe",
+	"petition-done": "Dziękujemy. Twój podpis został dodany.",
+	"petition-data-download": "Pobierz jako CSV"
+}
