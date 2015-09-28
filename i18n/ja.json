@@ -6,6 +6,16 @@
 	},
 	"petition-form-name": "名前",
 	"petition-form-email": "メールアドレス",
+	"petition-form-message": "人物メッセージ (省略可能)",
+	"petition-form-submit": "サイン",
 	"petition-form-required": "この欄は必須です",
-	"petition-data-download": "CSVとしてダウンロード"
+	"petition-form-blocked": "あなたは、この請願にはサインできません。なぜなら、あなたは現在、ブロックされているからです。",
+	"petition-done": "ありがとう。あなたの署名は追加されました。",
+	"petitiondata": "請願データ ダウンロード",
+	"petition-data-download": "CSVとしてダウンロード",
+	"action-view-petition-data": "請願データを表示",
+	"right-view-petition-data": "請願データを表示",
+	"log-name-petition": "請願署名ログ",
+	"log-description-petition": "嘆願書の署名を追跡します。",
+	"logentry-petition-sign": "$1 は請願「$4」に{{GENDER:$2|サインしました}}"
 }

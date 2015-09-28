@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Macofe",
-			"Gomoko"
+			"Gomoko",
+			"Orlodrim"
 		]
 	},
 	"petition": "Signer la pétition",
@@ -12,5 +13,19 @@
 	"petition-form-country": "Pays",
 	"petition-form-message": "Message personnel (facultatif)",
 	"petition-form-share": "Cochez cette case si nous pouvons afficher publiquement votre nom, votre pays et votre message personnel, et mettre à disposition votre message personnel sous une [//creativecommons.org/publicdomain/zero/1.0/ licence CC0] (facultatif).",
-	"petition-form-privacy": "La Fondation Wikimédia peut utiliser cette adresse de courriel pour vous faire savoir comment avance cette campagne ou vous informer des autres. Nous ne vendrons jamais vos informations à d’autres ni ne les utiliserons pour vous faire de la publicité. Nous sommes attachés votre vie privée, et les informations que vous soumettrez ici sont couvertes par notre [[wikimedia:Privacy Policy|Politique de confidentialité]]."
+	"petition-form-privacy": "La Fondation Wikimédia peut utiliser cette adresse de courriel pour vous faire savoir comment avance cette campagne ou vous informer des autres. Nous ne vendrons jamais vos informations à d’autres ni ne les utiliserons pour vous faire de la publicité. Nous sommes attachés votre vie privée, et les informations que vous soumettrez ici sont couvertes par notre [[wikimedia:Privacy Policy|Politique de confidentialité]].",
+	"petition-num-signatures": "$1 {{PLURAL:$1|personne a|personnes ont}} déjà signé",
+	"petition-form-submit": "Signer",
+	"petition-form-required": "Ce champ est requis",
+	"petition-form-blocked": "Vous ne pouvez pas signer cette pétition car vous êtes actuellement bloqué.",
+	"petition-done": "Merci. Votre signature a été ajoutée.",
+	"petitiondata": "Téléchargement des données d’une pétition",
+	"petition-data-intro": "Vous pouvez télécharger ici les signatures d’une pétition au format CSV. Notez que le fichier contient des informations privées, telles que des noms et des adresses de courriel, et qu'il doit être traité de façon conforme à l’accord de non-divulgation passé avec Wikimedia Foundation.",
+	"petition-data-download": "Télécharger en CSV",
+	"action-view-petition-data": "voir les données des pétitions",
+	"right-view-petition-data": "Voir les données des pétitions",
+	"group-petitiondata": "Utilisateurs pouvant voir les données des pétitions",
+	"log-name-petition": "Journal des signatures de pétition",
+	"log-description-petition": "Contient l’historique des signatures de pétition.",
+	"logentry-petition-sign": "$1 {{GENDER:$2|a signé}} la pétition « $4 »"
 }

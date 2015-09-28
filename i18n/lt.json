@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Zygimantus"
+		]
+	},
+	"petition": "Pasirašyti peticiją",
+	"petition-form-name": "Pavadinimas",
+	"petition-form-email": "El. pašto adresas",
+	"petition-form-country": "Šalis",
+	"right-view-petition-data": "Žiūrėti peticijos duomenis"
+}
