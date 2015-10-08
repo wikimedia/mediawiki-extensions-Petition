@@ -115,16 +115,15 @@ class SpecialPetition extends IncludableSpecialPage {
 
 		return $cache->getWithSetCallback(
 			$key,
-			function() use ( $petitionName ) {
+			$wgPetitionCountCacheTime,
+			function () use ( $petitionName ) {
 				$dbr = wfGetDB( DB_SLAVE );
 				return $dbr->selectField( 'petition_data',
 					'count(pt_id)',
 					array( 'pt_petitionname' => $petitionName )
 				);
 			},
-			$wgPetitionCountCacheTime,
-			array( $key ),
-			array( 'lockTSE' => 10 )
+			array( 'checkKeys' => array( $key ), 'lockTSE' => 10 )
 		);
 	}
 
