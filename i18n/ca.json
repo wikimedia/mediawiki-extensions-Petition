@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe"
+			"Macofe",
+			"Fitoschido"
 		]
 	},
 	"petition-form-name": "Nom",
-	"petition-form-email": "Adreça de correu electrònic",
+	"petition-form-email": "Adreça electrònica",
 	"petition-form-country": "País"
 }
