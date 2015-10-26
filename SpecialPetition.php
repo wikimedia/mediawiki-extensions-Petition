@@ -6,8 +6,6 @@ class SpecialPetition extends IncludableSpecialPage {
 	}
 
 	function execute($par) {
-
-		$request = $this->getRequest();
 		$out = $this->getOutput();
 
 		// Can have multiple named petitions using {{Special:Petition/foo}}
@@ -57,6 +55,7 @@ class SpecialPetition extends IncludableSpecialPage {
 	 *
 	 * @param $formData
 	 * @return true if success
+	 * @throws ReadOnlyError
 	 */
 	function petitionSubmit( $formData ) {
 		global $wgPetitionDatabase;
@@ -66,6 +65,10 @@ class SpecialPetition extends IncludableSpecialPage {
 		}
 
 		$dbw = wfGetDB( DB_MASTER, array(), $wgPetitionDatabase );
+		if ( $dbw->isReadOnly() ) {
+			throw new ReadOnlyError();
+		}
+
 		$dbw->insert( 'petition_data', array(
 				'pt_petitionname' => $formData['petitionname'],
 				'pt_source'       => $formData['source'],
@@ -135,16 +138,14 @@ class SpecialPetition extends IncludableSpecialPage {
 	 * @throws Exception
 	 */
 	static function getCountryArray( $language ) {
-		$countries = array();
 		if ( is_callable( array( 'CountryNames', 'getNames' ) ) ) {
 			// Need to flip as HTMLForm requires display name as the key
 			$countries = array_flip( CountryNames::getNames( $language ) );
 			ksort($countries);
-		} else {
-			throw new Exception( 'Petition requires Extension:CLDR to be installed.' );
+			return $countries;
 		}
 
-		return $countries;
+		throw new Exception( 'Petition requires Extension:CLDR to be installed.' );
 	}
 
 	static function defineForm( $petitionName, $source, $countries ) {
