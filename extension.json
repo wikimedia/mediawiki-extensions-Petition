@@ -1,0 +1,66 @@
+{
+	"name": "Petition",
+	"author": [
+		"Peter Coombe",
+		"Andrew Garrett"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Petition",
+	"descriptionmsg": "petition-desc",
+	"license-name": "GPL",
+	"type": "other",
+	"GroupPermissions": {
+		"petitiondata": {
+			"view-petition-data": true
+		}
+	},
+	"AvailableRights": [
+		"view-petition-data"
+	],
+	"SpecialPages": {
+		"Petition": "SpecialPetition",
+		"PetitionData": "SpecialPetitionData"
+	},
+	"LogTypes": [
+		"petition"
+	],
+	"LogRestrictions": {
+		"petition": "view-petition-data"
+	},
+	"LogActionsHandlers": {
+		"petition/sign": "LogFormatter"
+	},
+	"MessagesDirs": {
+		"Petition": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"PetitionDataAlias": "Petition.alias.php"
+	},
+	"AutoloadClasses": {
+		"SpecialPetition": "SpecialPetition.php",
+		"SpecialPetitionData": "SpecialPetitionData.php",
+		"PetitionHooks": "PetitionHooks.php"
+	},
+	"ResourceModules": {
+		"ext.Petition": {
+			"scripts": "petition.js",
+			"styles": "petition.css",
+			"dependencies": "mediawiki.ui"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "Petition"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": [
+			"PetitionHooks::getUpdates"
+		]
+	},
+	"config": {
+		"PetitionDatabase": false,
+		"PetitionCountCacheTime": 86400
+	},
+	"manifest_version": 1
+}
