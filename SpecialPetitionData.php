@@ -24,6 +24,10 @@ class SpecialPetitionData extends SpecialPage {
 		}
 	}
 
+	public function getSubpagesForPrefixSearch() {
+		return array( 'csv' );
+	}
+
 	function csvOutput( $res ) {
 
 		$ts = wfTimestampNow();
