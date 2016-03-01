@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ainali"
+		]
+	},
+	"petition": "Signera uppropet",
+	"petition-form-name": "Namn",
+	"petition-form-email": "E-postadress",
+	"petition-form-country": "Land",
+	"petition-form-message": "Personligt meddelande (valfritt)",
+	"petition-form-share": "Markera den här rutan om vi kan visa ditt namn, land och personliga budskap offentligt, och att släppa ditt personliga meddelande under en [//creativecommons.org/publicdomain/zero/1.0/ CC0-licens] (tillval).",
+	"petition-form-privacy": "Wikimedia Foundation får använda denna e-postadress så att du vet hur denna kampanj går eller berätta om andra kampanjer för dig. Vi kommer aldrig att sälja dina uppgifter till andra eller använda den för att visa reklam för dig. Vi värdesätter din integritet, och den information du lämnar här är täckt av våra [[wikimedia:Privacy Policy|Privacy Policy]].",
+	"petition-num-signatures": "$1 {{PLURAL:$1|person|personer}} har signerat redan",
+	"petition-form-submit": "Signera",
+	"petition-form-required": "Detta fält är obligatoriskt",
+	"petition-form-blocked": "Du kan inte skriva på denna petition för att du för närvarande är blockerad.",
+	"petition-done": "Tack. Din signatur har lagts till.",
+	"petitiondata": "Nedladdning av uppropsdata",
+	"petition-data-intro": "Här kan du ladda ner namnunderskrifter som en CSV-fil. Observera att detta innehåller privat information som namn och e-post adresser, och skall behandlas i enlighet med Wikimedia Foundations sekretessavtal.",
+	"petition-data-download": "Ladda ner som CSV",
+	"action-view-petition-data": "visa uppropsdata",
+	"right-view-petition-data": "Visa uppropsdata",
+	"group-petitiondata": "Uppropsdatabeskådare",
+	"log-name-petition": "Namnunderskriftlogg",
+	"log-description-petition": "Spårar signaturer av upprop.",
+	"logentry-petition-sign": "$1 {{KÖN:$2|signerade}} upprop \"$4\""
+}
