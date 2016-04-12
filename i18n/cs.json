@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mormegil"
+		]
+	},
+	"petition": "Podepsat petici",
+	"petition-desc": "Přidává [[Special:Petition|vkládatelnou stránku]] pro sběr podpisů a oprávněným uživatelům umožňuje [[Special:PetitionData|podpisy stáhnout]] jako CSV soubor.",
+	"petition-form-name": "Jméno",
+	"petition-form-email": "E-mailová adresa",
+	"petition-form-country": "Země",
+	"petition-form-message": "Osobní vzkaz (nepovinné)",
+	"petition-form-share": "Zaškrtněte toto políčko, pokud můžeme vaše jméno, zemi a osobní vzkaz zveřejnit, s tím, že osobní vzkaz uvolňujete za podmínek [//creativecommons.org/publicdomain/zero/1.0/deed.cs licence CC0] (nepovinné).",
+	"petition-form-privacy": "Nadace Wikimedia může tuto e-mailovou adresu použít, aby vás informovala o průběhu této kampaně nebo o dalších kampaních. Vaše informace nikdy neprodáme nikomu dalšímu, ani je nebudeme používat pro reklamu. Vašeho soukromí si ceníme a údaje, které zde uvedete, se řídí našimi [[wikimedia:Privacy Policy|Pravidly na ochranu osobních údajů]].",
+	"petition-num-signatures": "{{PLURAL:$1|Již podepsal $1 člověk|Již podepsali $1 lidé|Již podepsalo $1 lidí}}",
+	"petition-form-submit": "Podepsat",
+	"petition-form-required": "Toto pole je povinné",
+	"petition-form-blocked": "Tuto petici nemůžete podepsat, protože jste v současné době {{GENDER:|zablokován|zablokována|zablokováni}}.",
+	"petition-done": "Děkujeme. Váš podpis byl přidán.",
+	"petitiondata": "Stažení dat petice",
+	"petition-data-intro": "Zde si můžete stáhnout podpisy petice jako CSV soubor. Uvědomte si, že obsahuje soukromé údaje jako jména a e-mailové adresy, a je tedy potřeba s ním zacházet v souladu s dohodou o mlčenlivosti nadace Wikimedia.",
+	"petition-data-download": "Stáhnout jako CSV",
+	"action-view-petition-data": "prohlížet si data petic",
+	"right-view-petition-data": "Prohlížení dat petic",
+	"group-petitiondata": "Prohlížitelé dat petic",
+	"log-name-petition": "Kniha podpisů petic",
+	"log-description-petition": "Sleduje podpisy petic.",
+	"logentry-petition-sign": "$1 {{GENDER:$2|podepsal|podepsala}} petici „$4“"
+}
