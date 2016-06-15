@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80"
+			"Amire80",
+			"Guycn2"
 		]
 	},
 	"petition": "חתימה על עצומה",
@@ -21,7 +22,7 @@
 	"petition-data-intro": "כאן אפשר להוריד חתימות על עצומה לקובץ CSV. נא לשים לב לכך שיש כאן מידע פרטי כגון שמות וכתובות דוא\"ל ויש  להתייחס לזה בהתאם להסכם הסודיות של קרן ויקימדיה.",
 	"petition-data-download": "הורדה כקובץ CSV",
 	"action-view-petition-data": "להציג נתוני עצומה",
-	"right-view-petition-data": "הצגת נתוני עצומה",
+	"right-view-petition-data": "צפייה בנתוני עצומה",
 	"group-petitiondata": "מציגי נתוני עצומה",
 	"log-name-petition": "יומן חתימות על עצומה",
 	"log-description-petition": "מעקב אחרי חתימות על עצומות.",
