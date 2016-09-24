@@ -5,6 +5,10 @@ class SpecialPetition extends IncludableSpecialPage {
 		parent::__construct( 'Petition' );
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	function execute($par) {
 		$out = $this->getOutput();
 
