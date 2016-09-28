@@ -14,7 +14,7 @@ class SpecialPetitionData extends SpecialPage {
 
 		$downloadTitle = $this->getPageTitle( 'csv' );
 		$downloadText = $this->msg( 'petition-data-download' )->parse();
-		$downloadLink = Linker::link( $downloadTitle, $downloadText, array( 'class' => 'mw-ui-button mw-ui-primary') );
+		$downloadLink = Linker::link( $downloadTitle, $downloadText, array( 'class' => 'mw-ui-button mw-ui-progressive' ) );
 		$this->getOutput()->addHTML( $downloadLink );
 
 		if ( $par == 'csv' ) {
