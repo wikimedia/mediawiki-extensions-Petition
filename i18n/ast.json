@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"petition": "Roblar el pidimientu",
+	"petition-desc": "Añade una [[Special:Petition|páxina incluible]] pa recoyer firmes y pa que los usuarios autorizaos [[Special:PetitionData|descarguen les firmes]] como ficheru en formatu CSV.",
+	"petition-form-name": "Nome",
+	"petition-form-email": "Direición de corréu electrónicu",
+	"petition-form-country": "País",
+	"petition-form-message": "Mensaxe personal (opcional)",
+	"petition-form-share": "Marca esta caxella si podemos amosar públicamente'l to nome, país y mensaxe personal, y pa publicar el mensaxe personal baxo la [//creativecommons.org/publicdomain/zero/1.0/ llicencia CC0] (opcional).",
+	"petition-form-privacy": "La Fundación Wikimedia puede utilizar esta dirección de corréu electrónicu pa faete saber cómo ta diendo esta campaña o informate no tocante a otres campañes. Nunca vamos vender la información a terceros nin la utilizaremos pa promocionate. Valoramos la to privacidá, y l'información qu'unvies equí ta cubierta pola nuesa [[wikimedia:Privacy Policy|Política de privacidá]].",
+	"petition-num-signatures": "Yá {{PLURAL:$1|robló $1 persona|roblaron $1 persones}}",
+	"petition-form-submit": "Roblar",
+	"petition-form-required": "Esti campu ye obligatoriu",
+	"petition-form-blocked": "Nun puedes roblar esti pidimientu porque tas bloquiáu anguaño.",
+	"petition-done": "Gracies. Añadióse la to firma.",
+	"petitiondata": "Descargar los datos del pidimientu",
+	"petition-data-intro": "Equí puedes descargar les firmes del pidimientu como ficheru en formatu CSV. Ten en cuenta qu'esti contien información privada, como nomes y direcciones de corréu electrónicu, que tien de tratase de conformidá col alcuerdu de non divulgación de la Fundación Wikimedia.",
+	"petition-data-download": "Descargar como CSV",
+	"action-view-petition-data": "ver los datos del pidimientu",
+	"right-view-petition-data": "Ver los datos del pidimientu",
+	"group-petitiondata": "Visores de datos de los pidimientos",
+	"log-name-petition": "Rexistru de firmes de pidimientos",
+	"log-description-petition": "Sigue les firmes de pidimientos.",
+	"logentry-petition-sign": "$1 {{GENDER:$2|robló}} el pidimientu «$4»"
+}

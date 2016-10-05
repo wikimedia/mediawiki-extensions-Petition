@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Macofe",
-			"Jkb8"
+			"Jkb8",
+			"Hamilton Abreu"
 		]
 	},
-	"petition-desc": "Acrescenta uma [[Special:Petition|página incluível]] para colectar assinaturas e para que os utentes autorizados [[Special:PetitionData|descarreguem assinaturas]] como um arquivo CSV.",
+	"petition-desc": "Acrescenta uma [[Special:Petition|página incluível]] para recolher assinaturas e para que os utilizadores autorizados [[Special:PetitionData|descarreguem assinaturas]] para ficheiro em formato CSV.",
 	"petition-form-name": "Nome",
 	"petition-form-email": "Endereço de correio eletrónico",
 	"petition-form-country": "País"
