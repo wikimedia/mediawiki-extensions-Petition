@@ -7,8 +7,20 @@
 			"Vitorvicentevalente"
 		]
 	},
+	"petition": "Assinar petição",
 	"petition-desc": "Acrescenta uma [[Special:Petition|página]] para recolher assinaturas e para que os utilizadores autorizados [[Special:PetitionData|descarreguem assinaturas]] para ficheiro em formato CSV.",
 	"petition-form-name": "Nome",
 	"petition-form-email": "Endereço de correio eletrónico",
-	"petition-form-country": "País"
+	"petition-form-country": "País",
+	"petition-form-message": "Mensagem pessoal (opcional)",
+	"petition-num-signatures": "$1 {{PLURAL:$1|pessoa já assinou|pessoas já assinaram}}",
+	"petition-form-submit": "Assinar",
+	"petition-form-required": "Este campo é obrigatório",
+	"petition-form-blocked": "Não pode assinar esta petição porque está atualmente bloqueado.",
+	"petition-done": "Obrigado(a). A sua assinatura foi adicionada.",
+	"petition-data-download": "Descarregar como CSV",
+	"action-view-petition-data": "ver dados da petição",
+	"right-view-petition-data": "Ver dados da petição",
+	"log-name-petition": "Registo de assinaturas de petições",
+	"logentry-petition-sign": "$1 {{GENDER:$2|assinou}} a petição \"$4\""
 }
