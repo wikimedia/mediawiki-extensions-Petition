@@ -8,7 +8,7 @@
 		]
 	},
 	"petition": "Assinar petição",
-	"petition-desc": "Acrescenta uma [[Special:Petition|página]] para recolher assinaturas e para que os utilizadores autorizados [[Special:PetitionData|descarreguem assinaturas]] para ficheiro em formato CSV.",
+	"petition-desc": "Acrescenta uma [[Special:Petition|página incluível]] para recolher assinaturas e para que os utilizadores autorizados [[Special:PetitionData|descarreguem assinaturas]] para ficheiro em formato CSV.",
 	"petition-form-name": "Nome",
 	"petition-form-email": "Endereço de correio eletrónico",
 	"petition-form-country": "País",
