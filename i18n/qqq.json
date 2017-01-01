@@ -3,11 +3,12 @@
 		"authors": [
 			"Pcoombe (WMF)",
 			"Liuxinyu970226",
-			"Robby"
+			"Robby",
+			"Umherirrender"
 		]
 	},
 	"petition": "Title for Special:Petition page (not usually seen as it is transcluded on other pages)",
-	"petition-desc": "Description of Extension:Petition",
+	"petition-desc": "{{desc|name=Petition|url=https://www.mediawiki.org/wiki/Extension:Petition}}",
 	"petition-form-name": "Label for field to input name\n{{Identical|Name}}",
 	"petition-form-email": "Label for field to input email address\n{{Identical|E-mail address}}",
 	"petition-form-country": "Label for dropdown to select country\n{{Identical|Country}}",
