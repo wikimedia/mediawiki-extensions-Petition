@@ -9,15 +9,14 @@ class SpecialPetition extends IncludableSpecialPage {
 		return true;
 	}
 
-	function execute($par) {
+	function execute( $par ) {
 		$out = $this->getOutput();
 
 		// Can have multiple named petitions using {{Special:Petition/foo}}
 		// Can also specify am optional tracking parameter e.g. {{Special:Petition/foo/email}}
-		$arr = explode('/', $par);
-		$petitionName = isset($arr[0]) ? $arr[0] : 'default';
-		$source = isset($arr[1]) ? $arr[1] : '';
-
+		$arr = explode( '/', $par );
+		$petitionName = isset( $arr[0] ) ? $arr[0] : 'default';
+		$source = isset( $arr[1] ) ? $arr[1] : '';
 		$this->setHeaders();
 		$this->outputHeader();
 
@@ -87,7 +86,7 @@ class SpecialPetition extends IncludableSpecialPage {
 
 		// Update the cached number of signatures
 		$cache = ObjectCache::getMainWANInstance();
-		$key = wfMemcKey( 'petition', md5($formData['petitionname']), 'numsignatures' );
+		$key = wfMemcKey( 'petition', md5( $formData['petitionname'] ), 'numsignatures' );
 		$cache->touchCheckKey( $key );
 
 		// Log signature
@@ -145,7 +144,7 @@ class SpecialPetition extends IncludableSpecialPage {
 		if ( is_callable( array( 'CountryNames', 'getNames' ) ) ) {
 			// Need to flip as HTMLForm requires display name as the key
 			$countries = array_flip( CountryNames::getNames( $language ) );
-			ksort($countries);
+			ksort( $countries );
 			return $countries;
 		}
 
