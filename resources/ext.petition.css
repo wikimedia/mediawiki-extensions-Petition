@@ -1,7 +1,7 @@
 /* Match rest of mw-ui-vform style */
 .petition-form #mw-input-wpcountry,
 .petition-form #mw-input-wppersonalmessage {
-	padding: 0.35em 0.5em 0.35em 0.5em;
+	padding: 0.35em 0.5em;
 	border: 1px solid #ccc;
 	color: #252525;
 	margin: 0;

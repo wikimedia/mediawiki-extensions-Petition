@@ -44,8 +44,8 @@
 	},
 	"ResourceModules": {
 		"ext.Petition": {
-			"scripts": "petition.js",
-			"styles": "petition.css",
+			"scripts": "resources/ext.petition.js",
+			"styles": "resources/ext.petition.css",
 			"dependencies": "mediawiki.ui"
 		}
 	},
