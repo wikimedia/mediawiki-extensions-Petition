@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Felipe L. Ewald"
+		]
+	},
+	"petition-form-name": "Nome",
+	"petition-form-country": "País",
+	"petition-data-download": "Baixar como CSV"
+}
