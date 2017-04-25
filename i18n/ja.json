@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Sujiniku",
-			"W.CC"
+			"W.CC",
+			"Omotecho"
 		]
 	},
 	"petition": "請願に署名",
@@ -11,7 +12,7 @@
 	"petition-form-country": "居住国",
 	"petition-form-message": "個人的メッセージ (省略可能)",
 	"petition-form-share": "あなたの名前、居住国、個人的なメッセージが公表され、メッセージが [//creativecommons.org/publicdomain/zero/1.0/ CC0 license] のもとで公開されることに同意する（任意）",
-	"petition-form-privacy": "ウィキメディア財団は、あなたのメールアドレスを、このキャンペーンの状況や他のキャンペーンについての案内を行うことに使用することがあります。私たちはあなたの情報を他人に売り渡したり、あなたへの商業広告に使うことはありません。私たちはあなたのプライバシーを尊重し、あなたがここで入力した情報は[[wikimedia:Privacy Policy|Privacy Policy|プライバシーポリシー]]の適用を受けます。",
+	"petition-form-privacy": "ウィキメディア財団は、あなたのメールアドレスを、このキャンペーンの状況や他のキャンペーンについての案内を行うことに使用することがあります。私たちはあなたの情報を他人に売り渡したり、あなたへの商業広告に使うことはありません。私たちはあなたのプライバシーを尊重し、あなたがここで入力した情報は[[wikimedia:Privacy Policy|プライバシーポリシー]]の適用を受けます。",
 	"petition-num-signatures": "$1 人がすでに署名済み",
 	"petition-form-submit": "署名",
 	"petition-form-required": "この欄は必須です",
