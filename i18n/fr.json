@@ -3,7 +3,8 @@
 		"authors": [
 			"Macofe",
 			"Gomoko",
-			"Orlodrim"
+			"Orlodrim",
+			"Urhixidur"
 		]
 	},
 	"petition": "Signer la pétition",
@@ -20,7 +21,7 @@
 	"petition-form-blocked": "Vous ne pouvez pas signer cette pétition car vous êtes actuellement bloqué.",
 	"petition-done": "Merci. Votre signature a été ajoutée.",
 	"petitiondata": "Téléchargement des données d’une pétition",
-	"petition-data-intro": "Vous pouvez télécharger ici les signatures d’une pétition au format CSV. Notez que le fichier contient des informations privées, telles que des noms et des adresses de courriel, et qu'il doit être traité de façon conforme à l’accord de non-divulgation passé avec Wikimedia Foundation.",
+	"petition-data-intro": "Vous pouvez télécharger ici les signatures d’une pétition au format CSV. Notez que le fichier contient des informations privées, telles que des noms et des adresses de courriel, et qu’il doit être traité de façon conforme à l’accord de non-divulgation passé avec Wikimedia Foundation.",
 	"petition-data-download": "Télécharger en CSV",
 	"action-view-petition-data": "voir les données des pétitions",
 	"right-view-petition-data": "Voir les données des pétitions",
