@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe"
+			"Macofe",
+			"Fitoschido"
 		]
 	},
 	"petition": "Firmar la petición",
@@ -11,7 +12,7 @@
 	"petition-form-country": "País",
 	"petition-form-message": "Mensaje personal (opcional)",
 	"petition-form-share": "Marca esta casilla si podemos mostrar públicamente tu nombre, país y mensaje personal, y para publicar tu mensaje personal bajo la [//creativecommons.org/publicdomain/zero/1.0/ licencia CC0] (opcional).",
-	"petition-form-privacy": "La Fundación Wikimedia puede utilizar esta dirección de correo electrónico para hacerte saber cómo está yendo esta campaña o informarte acerca de otras campañas. Nunca venderemos tu información a terceros ni la utilizaremos para promocionarte. Valoramos tu privacidad, y la información que envías aquí está cubierta por nuestra [[wikimedia:Privacy Policy|Política de privacidad]].",
+	"petition-form-privacy": "La Fundación Wikimedia puede utilizar esta dirección de correo electrónico para hacerte saber cómo está yendo esta campaña o informarte acerca de otras campañas. Nunca venderemos tu información a terceros ni la utilizaremos para promocionarte. Valoramos tu privacidad, y la información que envías aquí está cubierta por nuestra [[wikimedia:Privacy Policy|Normativa de privacidad]].",
 	"petition-num-signatures": "Ya {{PLURAL:$1|ha firmado $1 persona|han firmado $1 personas}}",
 	"petition-form-submit": "Firmar",
 	"petition-form-required": "Este campo es obligatorio",
