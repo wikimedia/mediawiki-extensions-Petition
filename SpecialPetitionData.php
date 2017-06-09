@@ -5,7 +5,7 @@ class SpecialPetitionData extends SpecialPage {
 		parent::__construct( 'PetitionData', 'view-petition-data' );
 	}
 
-	function execute($par) {
+	function execute( $par ) {
 
 		$this->checkPermissions();
 
@@ -14,7 +14,8 @@ class SpecialPetitionData extends SpecialPage {
 
 		$downloadTitle = $this->getPageTitle( 'csv' );
 		$downloadText = $this->msg( 'petition-data-download' )->parse();
-		$downloadLink = Linker::link( $downloadTitle, $downloadText, array( 'class' => 'mw-ui-button mw-ui-progressive' ) );
+		$downloadLink = Linker::link( $downloadTitle, $downloadText,
+			[ 'class' => 'mw-ui-button mw-ui-progressive' ] );
 		$this->getOutput()->addHTML( $downloadLink );
 
 		if ( $par == 'csv' ) {
@@ -25,7 +26,7 @@ class SpecialPetitionData extends SpecialPage {
 	}
 
 	public function getSubpagesForPrefixSearch() {
-		return array( 'csv' );
+		return [ 'csv' ];
 	}
 
 	function csvOutput( $res ) {
@@ -45,24 +46,21 @@ class SpecialPetitionData extends SpecialPage {
 		$response->header( "Content-type: text/csv; charset=utf-8" );
 		$fh = fopen( 'php://output', 'w' );
 
-		fputcsv( $fh, array( 'id', 'petitionname', 'source', 'name',
-			'email', 'country', 'message', 'share', 'timestamp' ) );
+		fputcsv( $fh, [ 'id', 'petitionname', 'source', 'name',
+			'email', 'country', 'message', 'share', 'timestamp' ] );
 
-		foreach( $res as $row ) {
-
-			fputcsv( $fh, array(
+		foreach ( $res as $row ) {
+			fputcsv( $fh, [
 				$row->pt_id,
-				preg_replace("/^=/", "'=", $row->pt_petitionname),
-				preg_replace("/^=/", "'=", $row->pt_source),
-				preg_replace("/^=/", "'=", $row->pt_name),
-				preg_replace("/^=/", "'=", $row->pt_email),
-				preg_replace("/^=/", "'=", $row->pt_country),
-				preg_replace("/^=/", "'=", $row->pt_message),
+				preg_replace( "/^=/", "'=", $row->pt_petitionname ),
+				preg_replace( "/^=/", "'=", $row->pt_source ),
+				preg_replace( "/^=/", "'=", $row->pt_name ),
+				preg_replace( "/^=/", "'=", $row->pt_email ),
+				preg_replace( "/^=/", "'=", $row->pt_country ),
+				preg_replace( "/^=/", "'=", $row->pt_message ),
 				$row->pt_share,
 				wfTimestamp( TS_MW, $row->pt_timestamp )
-				)
-			);
-
+			] );
 		}
 
 		fclose( $fh );

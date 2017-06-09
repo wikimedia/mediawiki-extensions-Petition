@@ -6,11 +6,10 @@
  * @ingroup Extensions
  */
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases['en'] = array(
-	'Petition' => array( 'Petition' ),
-	'PetitionData' => array( 'PetitionData' )
-);
-
+$specialPageAliases['en'] = [
+	'Petition' => [ 'Petition' ],
+	'PetitionData' => [ 'PetitionData' ]
+];
