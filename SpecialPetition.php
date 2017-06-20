@@ -50,7 +50,6 @@ class SpecialPetition extends IncludableSpecialPage {
 		}
 
 		$out->addHtml( $htmlOut );
-
 	}
 
 	/**

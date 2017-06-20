@@ -6,7 +6,6 @@ class SpecialPetitionData extends SpecialPage {
 	}
 
 	function execute( $par ) {
-
 		$this->checkPermissions();
 
 		$this->getOutput()->setPageTitle( $this->msg( 'petitiondata' ) );
@@ -30,7 +29,6 @@ class SpecialPetitionData extends SpecialPage {
 	}
 
 	function csvOutput( $res ) {
-
 		$ts = wfTimestampNow();
 		$filename = "petition_data_$ts.csv";
 		$this->getOutput()->disable();
