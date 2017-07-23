@@ -28,8 +28,8 @@ class SpecialPetition extends IncludableSpecialPage {
 
 		$out->addModules( 'ext.Petition' );
 
-		$countries = SpecialPetition::getCountryArray( $this->getLanguage()->getCode() );
-		$form = SpecialPetition::defineForm( $petitionName, $source, $countries );
+		$countries = self::getCountryArray( $this->getLanguage()->getCode() );
+		$form = self::defineForm( $petitionName, $source, $countries );
 		$form->setSubmitCallback( [ $this, 'petitionSubmit' ] );
 
 		$form->prepareForm();
@@ -40,7 +40,7 @@ class SpecialPetition extends IncludableSpecialPage {
 			$htmlOut = '<span class="petition-done">' . wfMessage( 'petition-done' )->text() . '</span>';
 		} else {
 			$htmlOut = '<div class="petition-form">' . "\n";
-			$numberOfSignatures = SpecialPetition::getNumberOfSignatures( $petitionName );
+			$numberOfSignatures = self::getNumberOfSignatures( $petitionName );
 			$htmlOut .= '<div id="petition-num-signatures">';
 			$htmlOut .= wfMessage( 'petition-num-signatures', $numberOfSignatures )->escaped();
 			$htmlOut .= '</div>' . "\n";
