@@ -5,9 +5,12 @@
 		]
 	},
 	"petition": "Assinar petição",
+	"petition-desc": "Adiciona uma [[Special:Petition|página includable]] para coletar assinaturas e para usuários autorizados [[Special:PetitionData|baixarem assinaturas]] como um arquivo CSV.",
 	"petition-form-name": "Nome",
 	"petition-form-email": "Endereço de e-mail",
 	"petition-form-country": "País",
+	"petition-form-message": "Mensagem pessoal: (opcional)",
+	"petition-num-signatures": "$1 {{PLURAL:$1|pessoa já assinou|pessoas já assinaram}}",
 	"petition-form-submit": "Assinatura",
 	"petition-form-required": "Esse campo é obrigatório",
 	"petitiondata": "Baixar dados da petição",
@@ -15,5 +18,7 @@
 	"action-view-petition-data": "visualizar dados da petição",
 	"right-view-petition-data": "Visualizar dados da petição",
 	"group-petitiondata": "Visualizadores de dados de petição",
-	"log-name-petition": "Registro de assinaturas de petição"
+	"log-name-petition": "Registro de assinaturas de petição",
+	"log-description-petition": "Acompanha assinaturas de petições.",
+	"logentry-petition-sign": "$1 {{GENDER:$2|assinOU}} petição \"$4\""
 }
