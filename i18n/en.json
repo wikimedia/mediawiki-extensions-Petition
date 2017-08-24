@@ -5,7 +5,7 @@
 		]
 	},
 	"petition": "Sign petition",
-	"petition-desc": "Adds an [[Special:Petition|includable page]] to collect signatures, and for authorized users to [[Special:PetitionData|download signatures]] as a CSV file.",
+	"petition-desc": "Adds an [[Special:Petition|includable page]] to collect signatures, and for authorized users to [[Special:PetitionData|download signatures]] as a CSV file",
 	"petition-form-name": "Name",
 	"petition-form-email": "Email address",
 	"petition-form-country": "Country",
