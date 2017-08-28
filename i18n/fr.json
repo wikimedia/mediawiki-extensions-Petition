@@ -4,11 +4,12 @@
 			"Macofe",
 			"Gomoko",
 			"Orlodrim",
-			"Urhixidur"
+			"Urhixidur",
+			"Wladek92"
 		]
 	},
 	"petition": "Signer la pétition",
-	"petition-desc": "Ajoute une [[Special:Petition|page pouvant être incluse]] pour collecter des signatures, et pour que les utilisateurs autorisés puissent [[Special:PetitionData|télécharger les signatures]] sous forme de fichier CSV.",
+	"petition-desc": "Ajoute une [[Special:Petition|page pouvant être incluse]] pour collecter des signatures, et pour que les utilisateurs autorisés puissent [[Special:PetitionData|télécharger les signatures]] sous forme de fichier CSV",
 	"petition-form-name": "Nom",
 	"petition-form-email": "Adresse de courriel",
 	"petition-form-country": "Pays",
