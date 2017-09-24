@@ -18,7 +18,7 @@ class SpecialPetitionData extends SpecialPage {
 		$this->getOutput()->addHTML( $downloadLink );
 
 		if ( $par == 'csv' ) {
-			$dbr = wfGetDB( DB_SLAVE );
+			$dbr = wfGetDB( DB_REPLICA );
 			$res = $dbr->select( 'petition_data', '*', 1, __METHOD__ );
 			$this->csvOutput( $res );
 		}
