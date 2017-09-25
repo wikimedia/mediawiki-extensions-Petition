@@ -9,6 +9,16 @@ class SpecialPetition extends IncludableSpecialPage {
 		return true;
 	}
 
+	/**
+	 * How long to cache page when it is being included.
+	 * Must be uncached, so that it can be per user.
+	 *
+	 * @return int|bool Time in seconds, 0 to disable caching altogether
+	 */
+	public function maxIncludeCacheTime() {
+		return 0;
+	}
+
 	function execute( $par ) {
 		$out = $this->getOutput();
 
