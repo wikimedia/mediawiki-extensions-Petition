@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"petition": "Skriv under på underskriftskampanje",
+	"petition-desc": "Legger til en [[Special:Petition|inkluderbar side]] for å samle underskrifter, og lar autoriserte brukere [[Special:PetitionData|laste ned underskrifter]] som CSV-fil",
+	"petition-form-name": "Navn",
+	"petition-form-email": "E-postadresse",
+	"petition-form-country": "Land",
+	"petition-form-message": "Personlig melding (valgfritt)",
+	"petition-form-share": "Huk av denne boksen om vi kan vise navnet ditt, landet ditt og din personlige melding offentlig, og slippe din personlige melding under en [//creativecommons.org/publicdomain/zero/1.0/ CC0-lisens] (valgfritt).",
+	"petition-form-privacy": "Wikimedia Foundation kan bruke denne epostadresse for å la deg vite hvordan kampanjen går eller fortelle deg om andre kampanjer. Vi vil aldri selge din informasjon til andre eller sende deg reklame. Vi setter pris på personvernet ditt, og informasjonen du sender inn her dekkes av [[wikimedia:Privacy Policy|personvernspolitikken vår]].",
+	"petition-num-signatures": "$1 {{PLURAL:$1|person|personer}} har allerede skrevet under",
+	"petition-form-submit": "Skriv under",
+	"petition-form-required": "Dette feltet er påkrevd",
+	"petition-form-blocked": "Du kan ikke skrive under på denne kampanjen fordi du er blokkert for tiden.",
+	"petition-done": "Takk. Underskriften din har blitt lagt til.",
+	"petitiondata": "Nedlasting av underskriftskampanjedata",
+	"petition-data-intro": "Her kan du laste ned underskriftene fra kampanjen som ei CSV-fil. Merk at dette inneholder privat informasjon som navn og epostadresser, og må behandles i samsvar med Wikimedia Foundations konfidensialitetsavtale.",
+	"petition-data-download": "Laste ned som CSV",
+	"action-view-petition-data": "vise underskriftskampanjedata",
+	"right-view-petition-data": "Vise underskriftskampanjedata",
+	"group-petitiondata": "Underskriftskampanje-datalesere",
+	"log-name-petition": "Logg for kampanjeunderskrifter",
+	"log-description-petition": "Sporer underskrifter i kampanjer.",
+	"logentry-petition-sign": "$1 {{GENDER:$2|skrev}} uder på kampanjen «$4»"
+}
