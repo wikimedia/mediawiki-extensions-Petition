@@ -65,7 +65,7 @@ class SpecialPetition extends IncludableSpecialPage {
 	/**
 	 * Save into petition_data table
 	 *
-	 * @param $formData
+	 * @param array $formData
 	 * @return true if success
 	 * @throws ReadOnlyError
 	 */
