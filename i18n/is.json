@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sveinn í Felli"
+		]
+	},
+	"petition-form-name": "Nafn",
+	"petition-form-email": "Tölvupóstfang",
+	"petition-form-country": "Land",
+	"petition-form-submit": "Undirritun",
+	"petition-form-required": "Þetta svæði er nauðsynlegt að fylla út"
+}
