@@ -8,7 +8,7 @@ class PetitionHooks {
 	 * @return true
 	 */
 	public static function getUpdates( DatabaseUpdater $updater ) {
-		$updater->addExtensionTable( 'petition_data', __DIR__ . '/table.sql', true );
+		$updater->addExtensionTable( 'petition_data', __DIR__ . '/table.sql' );
 		return true;
 	}
 }
