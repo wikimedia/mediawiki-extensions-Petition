@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"ديفيد"
+		]
+	},
+	"petition": "عريضة التوقيع",
+	"petition-desc": "يضيف [[Special:Petition|صفحة قابلة للتضمين]] لجمع التوقيعات، وللمستخدمين المخولين [[Special:PetitionData|تنزيل التوقيعات]] كملف CSV",
+	"petition-form-name": "الاسم",
+	"petition-form-email": "عنوان البريد الإلكتروني",
+	"petition-form-country": "البلد",
+	"petition-form-message": "رسالة شخصية (اختياري)",
+	"petition-form-share": "حدد هذا الصندوق إذا كنا قد نعرض اسمك وبلدك ورسالتك الشخصية علنا، ولإطلاق رسالتك الشخصية بموجب ترخيص [//creativecommons.org/publicdomain/zero/1.0/ CC0 license] (اختياري).",
+	"petition-form-privacy": "قد تستخدم مؤسسة ويكيميديا ​​عنوان البريد الإلكتروني هذا لإعلامك بكيفية هذه الحملة أو إخبارك عن الحملات الأخرى، لن نبيع معلوماتك أبدا للآخرين أو نستخدمها للإعلان لك، نحن نقدر خصوصيتك، والمعلومات التي تقدمها هنا مشمولة في [[wikimedia:Privacy Policy|سياسة الخصوصية]] لدينا.",
+	"petition-num-signatures": "$1 {{PLURAL:$1|شخص قد وقعوا|أشخاص قد وقعوا}} بالفعل",
+	"petition-form-submit": "توقيع",
+	"petition-form-required": "هذا الحقل مطلوب",
+	"petition-form-blocked": "لا يمكنك توقيع هذه العريضة لأنك ممنوع حاليا.",
+	"petition-done": "شكرا لك; تمت إضافة توقيعك.",
+	"petitiondata": "تنزيل بيانات العريضة",
+	"petition-data-intro": "يمكنك هنا تنزيل توقيعات العريضة كملف CSV، لاحظ أن هذا يحتوي على معلومات خاصة مثل الأسماء وعناوين البريد الإلكتروني، ويجب التعامل معها وفقا لاتفاقية عدم الإفشاء الخاصة بمؤسسة ويكيميديا.",
+	"petition-data-download": "تنزيل بصيغة CSV",
+	"action-view-petition-data": "عرض بيانات العريضة",
+	"right-view-petition-data": "عرض بيانات العريضة",
+	"group-petitiondata": "عارضو بيانات العريضة",
+	"log-name-petition": "سجل تواقيع العريضة",
+	"log-description-petition": "يتتبع توقيعات العرائض.",
+	"logentry-petition-sign": "$1 {{GENDER:$2|وقع|وقعت}} العريضة \"$4\""
+}
