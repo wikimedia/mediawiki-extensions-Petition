@@ -1,10 +1,30 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Kly"
 		]
 	},
+	"petition": "簽署請願",
+	"petition-desc": "添加一個[[Special:Petition|可被包含的頁面]]來收集簽署，並授權使用者能[[Special:PetitionData|下載簽署]]成 CSV 檔案",
 	"petition-form-name": "名稱",
 	"petition-form-email": "電子郵件地址",
-	"petition-form-country": "國家"
+	"petition-form-country": "國家",
+	"petition-form-message": "個人訊息（可選）",
+	"petition-form-share": "若允許我們公開您的姓名、所在國家、以及個人訊息，並依 [//creativecommons.org/publicdomain/zero/1.0/deed.zh_TW CC0 許可協議]來釋出您的個人訊息，請勾選此方框（可選）。",
+	"petition-form-privacy": "維基媒體基金會會使用此電子郵件地址來讓您了解此活動進展，或是其它的活動事項。我們絕不會將您的資訊提供給其他人，或是使用來向您發送廣告。我們會確保您的隱私，您在此所提交資訊會受到我們的[[wikimedia:Privacy Policy|隱私政策]]保護。",
+	"petition-num-signatures": "$1 {{PLURAL:$1|個人已|個人已}}簽署",
+	"petition-form-submit": "簽署",
+	"petition-form-required": "此欄位為必填",
+	"petition-form-blocked": "因您目前被封禁，所以不能簽屬此請願。",
+	"petition-done": "感謝您。已添加了您的簽署。",
+	"petitiondata": "請願資料下載",
+	"petition-data-intro": "在此您可以下載請願簽署成 CSV 檔案。請注意這包含像是姓名或電子郵件地址等隱私訊息，並依照維基媒體基金會保密協議來處理。",
+	"petition-data-download": "下載成 CSV",
+	"action-view-petition-data": "查看請願資料",
+	"right-view-petition-data": "查看請願資料",
+	"group-petitiondata": "請願資料查看者",
+	"log-name-petition": "請願簽署日誌",
+	"log-description-petition": "追蹤請願簽署。",
+	"logentry-petition-sign": "$1 {{GENDER:$2|簽署}}了請願「$4」"
 }
