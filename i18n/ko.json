@@ -7,7 +7,12 @@
 			"Ykhwong"
 		]
 	},
+	"petition-form-name": "이름",
 	"petition-form-email": "이메일 주소",
+	"petition-form-country": "국가",
+	"petition-form-message": "개인 메시지 (선택사항)",
 	"petition-form-share": "공개적으로 당신의 이름, 국가와 공개적인 개인 메시지를 표시하려면 이 상자를 선택하면, [//creativecommons.org/publicdomain/zero/1.0/ CC0 라이선스]에 따라 개인 메시지가 공개됩니다. (선택 사항)",
-	"petition-done": "감사합니다. 당신의 서명이 추가되었습니다."
+	"petition-form-required": "이 칸은 필수입니다",
+	"petition-done": "감사합니다. 당신의 서명이 추가되었습니다.",
+	"petition-data-download": "CSV로 다운로드"
 }
