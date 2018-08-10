@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"petition-form-name": "Navn",
+	"petition-form-email": "E-mailadresse",
+	"petition-form-country": "Land",
+	"petition-form-message": "Personlig besked (valgfrit)"
+}
