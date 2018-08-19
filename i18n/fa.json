@@ -5,9 +5,12 @@
 			"Ladsgroup"
 		]
 	},
+	"petition": "امضای بیانیه",
 	"petition-form-name": "نام",
 	"petition-form-email": "نشانی رایانامه",
 	"petition-form-country": "کشور",
 	"petition-form-submit": "امضا",
-	"petition-form-required": "این گزینه الزامی‌است"
+	"petition-form-required": "این گزینه الزامی‌است",
+	"petitiondata": "دانلود اطلاعات بیانیه",
+	"right-view-petition-data": "نمایش اطلاعات بیانیه"
 }
