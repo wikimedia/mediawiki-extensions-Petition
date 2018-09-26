@@ -9,9 +9,12 @@
 	"petition-form-name": "نام",
 	"petition-form-email": "نشانی رایانامه",
 	"petition-form-country": "کشور",
+	"petition-form-message": "پیام شخصی (اختیاری)",
 	"petition-form-submit": "امضا",
 	"petition-form-required": "این گزینه الزامی‌است",
 	"petitiondata": "دانلود اطلاعات بیانیه",
 	"petition-data-download": "دریافت به‌صورت CSV",
-	"right-view-petition-data": "نمایش اطلاعات بیانیه"
+	"action-view-petition-data": "نمایش اطلاعات بیانیه",
+	"right-view-petition-data": "نمایش اطلاعات بیانیه",
+	"log-name-petition": "سیاهه امضاهای بیانیه"
 }
