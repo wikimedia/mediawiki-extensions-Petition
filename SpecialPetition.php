@@ -1,7 +1,7 @@
 <?php
 
 class SpecialPetition extends IncludableSpecialPage {
-	function __construct() {
+	public function __construct() {
 		parent::__construct( 'Petition' );
 	}
 
@@ -19,7 +19,7 @@ class SpecialPetition extends IncludableSpecialPage {
 		return 0;
 	}
 
-	function execute( $par ) {
+	public function execute( $par ) {
 		$out = $this->getOutput();
 
 		// Can have multiple named petitions using {{Special:Petition/foo}}
@@ -69,7 +69,7 @@ class SpecialPetition extends IncludableSpecialPage {
 	 * @return true if success
 	 * @throws ReadOnlyError
 	 */
-	function petitionSubmit( $formData ) {
+	private function petitionSubmit( $formData ) {
 		global $wgPetitionDatabase;
 
 		if ( $this->getUser()->pingLimiter( 'edit' ) ) {
@@ -123,7 +123,7 @@ class SpecialPetition extends IncludableSpecialPage {
 	 * @param string $petitionName
 	 * @return int The current number of signatures
 	 */
-	static function getNumberOfSignatures( $petitionName ) {
+	private static function getNumberOfSignatures( $petitionName ) {
 		global $wgPetitionCountCacheTime;
 
 		$cache = ObjectCache::getMainWANInstance();
@@ -150,7 +150,7 @@ class SpecialPetition extends IncludableSpecialPage {
 	 * @return array Countries with names as keys and ISO codes as values
 	 * @throws Exception
 	 */
-	static function getCountryArray( $language ) {
+	private static function getCountryArray( $language ) {
 		if ( is_callable( [ 'CountryNames', 'getNames' ] ) ) {
 			// Need to flip as HTMLForm requires display name as the key
 			$countries = array_flip( CountryNames::getNames( $language ) );
@@ -161,7 +161,7 @@ class SpecialPetition extends IncludableSpecialPage {
 		throw new Exception( 'Petition requires Extension:CLDR to be installed.' );
 	}
 
-	static function defineForm( $petitionName, $source, $countries ) {
+	private static function defineForm( $petitionName, $source, $countries ) {
 		$formDescriptor = [
 			'petitionname' => [
 				'type' => 'hidden',

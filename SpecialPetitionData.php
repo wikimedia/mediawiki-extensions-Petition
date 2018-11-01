@@ -1,11 +1,11 @@
 <?php
 
 class SpecialPetitionData extends SpecialPage {
-	function __construct() {
+	public function __construct() {
 		parent::__construct( 'PetitionData', 'view-petition-data' );
 	}
 
-	function execute( $par ) {
+	public function execute( $par ) {
 		$this->checkPermissions();
 
 		$this->getOutput()->setPageTitle( $this->msg( 'petitiondata' ) );
@@ -28,7 +28,7 @@ class SpecialPetitionData extends SpecialPage {
 		return [ 'csv' ];
 	}
 
-	function csvOutput( $res ) {
+	private function csvOutput( $res ) {
 		$ts = wfTimestampNow();
 		$filename = "petition_data_$ts.csv";
 		$this->getOutput()->disable();
