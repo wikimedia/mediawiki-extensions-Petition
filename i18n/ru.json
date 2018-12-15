@@ -1,11 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"INS Pirat"
+			"INS Pirat",
+			"Nk88"
 		]
 	},
 	"petition": "Подписать петицию",
+	"petition-form-name": "имя",
 	"petition-form-email": "Электронный адрес",
+	"petition-form-country": "Страна",
+	"petition-form-message": "Личное сообщение (необязательное)",
+	"petition-form-submit": "Знак",
 	"petition-form-required": "Это поле обязательно для заполнения",
 	"petition-form-blocked": "Вы не можете подписать эту петицию, поскольку в настоящий момент вы заблокированы.",
 	"petition-done": "Спасибо. Ваша подпись была добавлена."
