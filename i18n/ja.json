@@ -3,7 +3,8 @@
 		"authors": [
 			"Sujiniku",
 			"W.CC",
-			"Omotecho"
+			"Omotecho",
+			"Shirayuki"
 		]
 	},
 	"petition": "請願に署名",
@@ -20,7 +21,7 @@
 	"petition-done": "ありがとうございます。あなたの署名は追加されました。",
 	"petitiondata": "請願資料のダウンロード",
 	"petition-data-download": "CSVとしてダウンロード",
-	"action-view-petition-data": "請願資料を閲覧",
+	"action-view-petition-data": "請願資料の閲覧",
 	"right-view-petition-data": "請願資料を閲覧",
 	"group-petitiondata": "請願資料閲覧者",
 	"log-name-petition": "請願署名記録",
