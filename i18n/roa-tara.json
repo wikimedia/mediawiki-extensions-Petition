@@ -5,9 +5,12 @@
 		]
 	},
 	"petition": "Firme 'a petizione",
+	"petition-desc": "Aggiune 'na [[Special:Petition|pàgene sckaffabbele]] pe collezzionà firme, e pe le utinde autorizzate a [[Special:PetitionData|scarecà le firme]] cumme 'nu file CSV",
 	"petition-form-name": "Nome",
 	"petition-form-email": "Indirizze e-mail",
 	"petition-form-country": "Nazione",
+	"petition-form-message": "Messàgge personale (facoltative)",
 	"petition-form-submit": "Firme",
-	"petition-form-required": "Stu cambe jè richieste"
+	"petition-form-required": "Stu cambe jè richieste",
+	"petition-done": "Grazie. 'A firma toje ha state aggiunde."
 }
