@@ -10,7 +10,11 @@
 	"petition-form-email": "Indirizze e-mail",
 	"petition-form-country": "Nazione",
 	"petition-form-message": "Messàgge personale (facoltative)",
+	"petition-form-share": "Signe sta sckatele ce putime fà 'ndrucà pubblecamende 'u nome tue, paese e messaàgge personale, e relasse 'u messàgge personale sotte a [//creativecommons.org/publicdomain/zero/1.0/ licenze CC0] (facoltative).",
 	"petition-form-submit": "Firme",
 	"petition-form-required": "Stu cambe jè richieste",
-	"petition-done": "Grazie. 'A firma toje ha state aggiunde."
+	"petition-done": "Grazie. 'A firma toje ha state aggiunde.",
+	"action-view-petition-data": "'ndruche le date d'a petizione",
+	"right-view-petition-data": "'Ndruche le date d'a petizione",
+	"group-petitiondata": "'Ndrucature de le date d'a petizione"
 }
