@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class SpecialPetition extends IncludableSpecialPage {
 	public function __construct() {
 		parent::__construct( 'Petition' );
@@ -95,7 +97,7 @@ class SpecialPetition extends IncludableSpecialPage {
 		);
 
 		// Update the cached number of signatures
-		$cache = ObjectCache::getMainWANInstance();
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 		$key = wfMemcKey( 'petition', md5( $formData['petitionname'] ), 'numsignatures' );
 		$cache->touchCheckKey( $key );
 
@@ -126,7 +128,7 @@ class SpecialPetition extends IncludableSpecialPage {
 	private static function getNumberOfSignatures( $petitionName ) {
 		global $wgPetitionCountCacheTime;
 
-		$cache = ObjectCache::getMainWANInstance();
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 		$key = wfMemcKey( 'petition', md5( $petitionName ), 'numsignatures' );
 
 		return $cache->getWithSetCallback(
