@@ -8,6 +8,9 @@
 	"descriptionmsg": "petition-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.33.0"
+	},
 	"GroupPermissions": {
 		"petitiondata": {
 			"view-petition-data": true
@@ -38,9 +41,9 @@
 		"PetitionDataAlias": "Petition.alias.php"
 	},
 	"AutoloadClasses": {
-		"SpecialPetition": "SpecialPetition.php",
-		"SpecialPetitionData": "SpecialPetitionData.php",
-		"PetitionHooks": "PetitionHooks.php"
+		"SpecialPetition": "includes/specialpage/SpecialPetition.php",
+		"SpecialPetitionData": "includes/specialpage/SpecialPetitionData.php",
+		"PetitionHooks": "includes/PetitionHooks.php"
 	},
 	"ResourceModules": {
 		"ext.Petition": {
@@ -55,7 +58,7 @@
 	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": [
-			"PetitionHooks::getUpdates"
+			"PetitionHooks::onLoadExtensionSchemaUpdates"
 		]
 	},
 	"config": {
