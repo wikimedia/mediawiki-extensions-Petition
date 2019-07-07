@@ -11,10 +11,19 @@
 	"petition-form-country": "Nazione",
 	"petition-form-message": "Messàgge personale (facoltative)",
 	"petition-form-share": "Signe sta sckatele ce putime fà 'ndrucà pubblecamende 'u nome tue, paese e messaàgge personale, e relasse 'u messàgge personale sotte a [//creativecommons.org/publicdomain/zero/1.0/ licenze CC0] (facoltative).",
+	"petition-form-privacy": "'A Wikimedia Foundation pò ausà ste indirizze email pe farte canoscere cumme ste vèje sta cambagne e pe dicere de otre cambagne. Nuje non ge vennime maje le 'mbormaziune tune a le otre pe ausarle pe mannarte 'a pubblecetà. Nuje valutame 'a privacy toje, e le 'mbormaziune ca tu ne dè sò cuperte da 'a [[wikimedia:Privacy Policy|Regole d'a Privacy]] nostre.",
+	"petition-num-signatures": "$1 {{PLURAL:$1|'nu crestiane ave|crestiane onne}} ggià firmate",
 	"petition-form-submit": "Firme",
 	"petition-form-required": "Stu cambe jè richieste",
+	"petition-form-blocked": "Non ge puè firmà sta petizione purcé pe mò ste bloccate.",
 	"petition-done": "Grazie. 'A firma toje ha state aggiunde.",
+	"petitiondata": "Scarecamende de le date d'a petizione",
+	"petition-data-intro": "Aqquà puè scarecà le firme d'a petizione jndr'à 'nu file CSV. Attenziò ca quiste tène 'mbormaziune private cumme nome e indirizze email, e onna essere trattate in accorde cu le regole d'a Wikimedia Foundation.",
+	"petition-data-download": "Scareche cumme 'nu CSV",
 	"action-view-petition-data": "'ndruche le date d'a petizione",
 	"right-view-petition-data": "'Ndruche le date d'a petizione",
-	"group-petitiondata": "'Ndrucature de le date d'a petizione"
+	"group-petitiondata": "'Ndrucature de le date d'a petizione",
+	"log-name-petition": "Archivije de le firme d'a petizione",
+	"log-description-petition": "Tracce le firme de le petiziune.",
+	"logentry-petition-sign": "$1 {{GENDER:$2|ave firmate}} 'a petizione \"$4\""
 }
