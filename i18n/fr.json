@@ -5,7 +5,8 @@
 			"Gomoko",
 			"Orlodrim",
 			"Urhixidur",
-			"Wladek92"
+			"Wladek92",
+			"Thibaut120094"
 		]
 	},
 	"petition": "Signer la pétition",
@@ -15,7 +16,7 @@
 	"petition-form-country": "Pays",
 	"petition-form-message": "Message personnel (facultatif)",
 	"petition-form-share": "Cochez cette case si nous pouvons afficher publiquement votre nom, votre pays et votre message personnel, et mettre à disposition votre message personnel sous une [//creativecommons.org/publicdomain/zero/1.0/ licence CC0] (facultatif).",
-	"petition-form-privacy": "La Fondation Wikimédia peut utiliser cette adresse de courriel pour vous faire savoir comment avance cette campagne ou vous informer des autres. Nous ne vendrons jamais vos informations à d’autres ni ne les utiliserons pour vous faire de la publicité. Nous sommes attachés votre vie privée, et les informations que vous soumettrez ici sont couvertes par notre [[wikimedia:Privacy Policy|Politique de confidentialité]].",
+	"petition-form-privacy": "La Fondation Wikimedia peut utiliser cette adresse de courriel pour vous faire savoir comment avance cette campagne ou vous informer des autres. Nous ne vendrons jamais vos informations à d’autres ni ne les utiliserons pour vous faire de la publicité. Nous sommes attachés votre vie privée, et les informations que vous soumettrez ici sont couvertes par notre [[wikimedia:Privacy Policy|Politique de confidentialité]].",
 	"petition-num-signatures": "$1 {{PLURAL:$1|personne a|personnes ont}} déjà signé",
 	"petition-form-submit": "Signer",
 	"petition-form-required": "Ce champ est requis",
