@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"petition": "Dilekçeyi imzala",
+	"petition-desc": "İmza toplamak için [[Special:Petition|dahil edilen sayfa]] ve yetkili kullanıcılar için CSV dosyası olarak [[Special:PetitionData|indirme imzaları]] öğesine ekler",
+	"petition-form-name": "Ad",
+	"petition-form-email": "E-posta adresi",
+	"petition-form-country": "Ülke",
+	"petition-form-message": "Kişisel mesaj (isteğe bağlı)",
+	"petition-form-share": "Adınızı, ülkenizi ve kişisel mesajınızı herkese açık olarak görüntüleyebiliyor ve kişisel mesajınızı bir [//creativecommons.org/publicdomain/zero/1.0/deed.tr CC0 lisansı] (isteğe bağlı) altında yayınlamak için bu kutuyu işaretleyin.",
+	"petition-form-privacy": "Wikimedia Vakfı bu e-posta adresini, bu kampanyanın nasıl gittiğini bildirmek veya size diğer kampanyalar hakkında bilgi vermek için kullanabilir. Bilgilerinizi asla başkalarına satmayacağız veya size reklam vermek için kullanmayız. Gizliliğinize değer veriyoruz ve burada gönderdiğiniz bilgiler [[wikimedia:Privacy Policy|Gizlilik Politikası]] kapsamındadır.",
+	"petition-num-signatures": "$1 {{PLURAL:$1|insan|insan}} zaten imzalandı",
+	"petition-form-submit": "İşaret",
+	"petition-form-required": "Bu alan gereklidir",
+	"petition-form-blocked": "Şu anda engellendiğiniz için bu kampanyayı imzalayamazsınız.",
+	"petition-done": "Teşekkür ederim. İmzanız eklendi.",
+	"petitiondata": "Dilekçe veri indir",
+	"petition-data-intro": "Dilekçe imzalarını CSV dosyası olarak indirebilirsiniz. Bunun adlar ve e-posta adresleri gibi özel bilgiler içerdiğini ve Wikimedia Vakfı gizlilik sözleşmesine uygun olarak ele alınması gerektiğini unutmayın.",
+	"petition-data-download": "CSV olarak indir",
+	"action-view-petition-data": "dilekçe verilerini görüntüle",
+	"right-view-petition-data": "Dilekçe verilerini görüntüle",
+	"group-petitiondata": "Dilekçe veri izleyicileri",
+	"log-name-petition": "Dilekçe imza günlüğü",
+	"log-description-petition": "Dilekçelerin imzalarını izler.",
+	"logentry-petition-sign": "$1, \"$4\" dilekçesini {{GENDER:$2|imzalandı}}"
+}
