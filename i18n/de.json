@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kghbln",
 			"Metalhead64"
 		]
 	},
 	"petition": "Petition unterzeichnen",
-	"petition-desc": "Ergänzt eine [[Special:Petition|einbindbare Seite]] zum Sammeln von Signaturen und für berechtigte Benutzer die Möglichkeit, [[Special:PetitionData|Signaturen als CSV-Datei herunterzuladen]].",
+	"petition-desc": "Erweitert das Wiki um eine einbindbare [[Special:Petition|Spezialseite]] zum Sammeln von Unterschriften sowie für berechtigte Benutzer die Möglichkeit, [[Special:PetitionData|Unterschriften in eine CSV-Datei herunterzuladen]]",
 	"petition-form-name": "Name",
 	"petition-form-email": "E-Mail-Adresse",
 	"petition-form-country": "Staat",
