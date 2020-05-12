@@ -62,8 +62,12 @@
 		]
 	},
 	"config": {
-		"PetitionDatabase": false,
-		"PetitionCountCacheTime": 86400
+		"PetitionDatabase": {
+			"value": false
+		},
+		"PetitionCountCacheTime": {
+			"value": 86400
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
