@@ -19,7 +19,7 @@ class SpecialPetitionData extends SpecialPage {
 
 		if ( $par == 'csv' ) {
 			$dbr = wfGetDB( DB_REPLICA );
-			$res = $dbr->select( 'petition_data', '*', 1, __METHOD__ );
+			$res = $dbr->select( 'petition_data', '*', [], __METHOD__ );
 			$this->csvOutput( $res );
 		}
 	}

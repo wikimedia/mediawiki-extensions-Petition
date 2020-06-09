@@ -27,8 +27,8 @@ class SpecialPetition extends IncludableSpecialPage {
 		// Can have multiple named petitions using {{Special:Petition/foo}}
 		// Can also specify am optional tracking parameter e.g. {{Special:Petition/foo/email}}
 		$arr = explode( '/', $par );
-		$petitionName = isset( $arr[0] ) ? $arr[0] : 'default';
-		$source = isset( $arr[1] ) ? $arr[1] : '';
+		$petitionName = $arr[0] ?? 'default';
+		$source = $arr[1] ?? '';
 		$this->setHeaders();
 		$this->outputHeader();
 
@@ -49,7 +49,7 @@ class SpecialPetition extends IncludableSpecialPage {
 		$result = $form->tryAuthorizedSubmit();
 
 		if ( $result === true || ( $result instanceof Status && $result->isGood() ) ) {
-			$htmlOut = '<span class="petition-done">' . wfMessage( 'petition-done' )->text() . '</span>';
+			$htmlOut = '<span class="petition-done">' . wfMessage( 'petition-done' )->escaped() . '</span>';
 		} else {
 			$htmlOut = '<div class="petition-form">' . "\n";
 			$numberOfSignatures = self::getNumberOfSignatures( $petitionName );
@@ -68,7 +68,7 @@ class SpecialPetition extends IncludableSpecialPage {
 	 * Save into petition_data table
 	 *
 	 * @param array $formData
-	 * @return true if success
+	 * @return string|true true if success
 	 * @throws ReadOnlyError
 	 */
 	private function petitionSubmit( $formData ) {
@@ -111,7 +111,7 @@ class SpecialPetition extends IncludableSpecialPage {
 		$entry->insert();
 
 		// And if CheckUser is installed, give it a heads up
-		if ( is_callable( 'CheckUserHooks::updateCheckUserData' ) ) {
+		if ( is_callable( [ CheckUserHooks::class, 'updateCheckUserData' ] ) ) {
 			$rc = $entry->getRecentChange();
 			CheckUserHooks::updateCheckUserData( $rc );
 		}
@@ -153,7 +153,7 @@ class SpecialPetition extends IncludableSpecialPage {
 	 * @throws Exception
 	 */
 	private static function getCountryArray( $language ) {
-		if ( is_callable( [ 'CountryNames', 'getNames' ] ) ) {
+		if ( is_callable( [ CountryNames::class, 'getNames' ] ) ) {
 			// Need to flip as HTMLForm requires display name as the key
 			$countries = array_flip( CountryNames::getNames( $language ) );
 			ksort( $countries );
