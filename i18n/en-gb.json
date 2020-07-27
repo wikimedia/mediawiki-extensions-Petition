@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80"
+			"Amire80",
+			"Bjh21"
 		]
 	},
-	"petition-desc": "Adds an [[Special:Petition|includable page]] to collect signatures, and for authorised users to [[Special:PetitionData|download signatures]] as a CSV file."
+	"petition-desc": "Adds an [[Special:Petition|includable page]] to collect signatures, and for authorised users to [[Special:PetitionData|download signatures]] as a CSV file.",
+	"petition-form-share": "Check this box if we may display your name, country and personal message publicly, and to release your personal message under a [//creativecommons.org/publicdomain/zero/1.0/ CC0 licence] (optional)."
 }
