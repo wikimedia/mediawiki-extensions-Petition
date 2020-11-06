@@ -98,7 +98,7 @@ class SpecialPetition extends IncludableSpecialPage {
 
 		// Update the cached number of signatures
 		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
-		$key = wfMemcKey( 'petition', md5( $formData['petitionname'] ), 'numsignatures' );
+		$key = $cache->makeKey( 'petition-numsignatures', md5( $formData['petitionname'] ) );
 		$cache->touchCheckKey( $key );
 
 		// Log signature
@@ -129,7 +129,7 @@ class SpecialPetition extends IncludableSpecialPage {
 		global $wgPetitionCountCacheTime;
 
 		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
-		$key = wfMemcKey( 'petition', md5( $petitionName ), 'numsignatures' );
+		$key = $cache->makeKey( 'petition-numsignatures', md5( $petitionName ) );
 
 		return $cache->getWithSetCallback(
 			$key,
