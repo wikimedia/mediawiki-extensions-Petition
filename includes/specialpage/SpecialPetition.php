@@ -140,7 +140,7 @@ class SpecialPetition extends IncludableSpecialPage {
 		return $cache->getWithSetCallback(
 			$key,
 			$wgPetitionCountCacheTime,
-			function () use ( $petitionName ) {
+			static function () use ( $petitionName ) {
 				$dbr = wfGetDB( DB_REPLICA );
 				return $dbr->selectField( 'petition_data',
 					'count(pt_id)',
