@@ -79,7 +79,7 @@ class SpecialPetition extends IncludableSpecialPage {
 			return wfMessage( 'actionthrottledtext' )->text();
 		}
 
-		$dbw = wfGetDB( DB_MASTER, [], $wgPetitionDatabase );
+		$dbw = wfGetDB( DB_PRIMARY, [], $wgPetitionDatabase );
 		if ( $dbw->isReadOnly() ) {
 			throw new ReadOnlyError();
 		}
