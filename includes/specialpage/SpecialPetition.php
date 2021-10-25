@@ -34,7 +34,7 @@ class SpecialPetition extends IncludableSpecialPage {
 		$this->outputHeader();
 
 		$user = $this->getUser();
-		if ( $user->isBlocked() ) {
+		if ( $user->getBlock() ) {
 			$out->addWikiMsg( 'petition-form-blocked' );
 			return;
 		}
