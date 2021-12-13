@@ -4,15 +4,28 @@
 			"Hwangjy9",
 			"Jerrykim306",
 			"Ykhwong",
-			"아라"
+			"아라",
+			"Kwj2772"
 		]
 	},
+	"petition": "청원 서명하기",
 	"petition-form-name": "이름",
 	"petition-form-email": "이메일 주소",
 	"petition-form-country": "국가",
 	"petition-form-message": "개인 메시지 (선택사항)",
 	"petition-form-share": "공개적으로 당신의 이름, 국가와 공개적인 개인 메시지를 표시하려면 이 상자를 선택하면, [//creativecommons.org/publicdomain/zero/1.0/ CC0 라이선스]에 따라 개인 메시지가 공개됩니다. (선택 사항)",
+	"petition-form-privacy": "위키미디어 재단은 이 캠페인이 어떻게 진행되는지 알리거나 다른 캠페인을 알리기 위해 이 이메일 주소를 이용할 수 있습니다. 우리는 당신의 정보를 다른 사람에게 양도하거나 광고를 위해 이용하지 않을 것입니다. 우리는 당신의 사생활을 존중하며, 당신이 제출한 정보는 우리의 [[wikimedia:Privacy Policy|개인정보 정책]]에 따라 규율됩니다.",
+	"petition-num-signatures": "{{PLURAL:$1|$1명}}이 이미 서명했습니다.",
+	"petition-form-submit": "서명하기",
 	"petition-form-required": "이 칸은 필수입니다",
+	"petition-form-blocked": "당신은 현재 차단되었으므로 서명할 수 없습니다.",
 	"petition-done": "감사합니다. 당신의 서명이 추가되었습니다.",
-	"petition-data-download": "CSV로 다운로드"
+	"petitiondata": "청원 데이터 다운로드",
+	"petition-data-intro": "여기서 청원 서명 내역을 CSV 파일로 다운로드할 수 있습니다. 여기에는 이름이나 이메일 주소와 같은 개인정보가 포함되어 있으며, 위키미디어 재단 비밀 준수 약정을 준수하여야 합니다.",
+	"petition-data-download": "CSV로 다운로드",
+	"action-view-petition-data": "청원 데이터를 볼",
+	"right-view-petition-data": "청원 데이터 보기",
+	"log-name-petition": "청원 서명 기록",
+	"log-description-petition": "청원 서명 내역을 추적합니다.",
+	"logentry-petition-sign": "$1님이 \"$4\" 청원에 {{GENDER:$2|서명}}하였습니다."
 }
