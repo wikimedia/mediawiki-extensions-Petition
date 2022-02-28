@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
-			"Siebrand"
+			"Siebrand",
+			"Romaine"
 		]
 	},
+	"petition": "Teken petitie",
 	"petition-form-name": "Naam",
 	"petition-form-email": "E-mailadres",
 	"petition-form-country": "Land",
