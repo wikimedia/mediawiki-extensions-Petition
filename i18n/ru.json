@@ -2,14 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"INS Pirat",
-			"Nk88"
+			"Nk88",
+			"Pacha Tchernof"
 		]
 	},
 	"petition": "Подписать петицию",
 	"petition-form-name": "имя",
 	"petition-form-email": "Электронный адрес",
 	"petition-form-country": "Страна",
-	"petition-form-message": "Личное сообщение (необязательное)",
+	"petition-form-message": "Личное сообщение (по желанию)",
 	"petition-form-submit": "Знак",
 	"petition-form-required": "Это поле обязательно для заполнения",
 	"petition-form-blocked": "Вы не можете подписать эту петицию, поскольку в настоящий момент вы заблокированы.",
