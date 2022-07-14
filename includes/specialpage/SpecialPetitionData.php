@@ -12,8 +12,9 @@ class SpecialPetitionData extends SpecialPage {
 		$this->getOutput()->addWikiMsg( 'petition-data-intro' );
 
 		$downloadTitle = $this->getPageTitle( 'csv' );
-		$downloadText = $this->msg( 'petition-data-download' )->parse();
-		$downloadLink = Linker::link( $downloadTitle, $downloadText,
+		$downloadText = $this->msg( 'petition-data-download' )->text();
+		$linkRenderer = $this->getLinkRenderer();
+		$downloadLink = $linkRenderer->makeKnownLink( $downloadTitle, $downloadText,
 			[ 'class' => 'mw-ui-button mw-ui-progressive' ] );
 		$this->getOutput()->addHTML( $downloadLink );
 
