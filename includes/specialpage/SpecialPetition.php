@@ -27,7 +27,7 @@ class SpecialPetition extends IncludableSpecialPage {
 
 		// Can have multiple named petitions using {{Special:Petition/foo}}
 		// Can also specify am optional tracking parameter e.g. {{Special:Petition/foo/email}}
-		$arr = explode( '/', $par );
+		$arr = explode( '/', $par ?? '' );
 		$petitionName = $arr[0] ?? 'default';
 		$source = $arr[1] ?? '';
 		$this->setHeaders();
