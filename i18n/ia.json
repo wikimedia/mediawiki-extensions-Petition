@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"petition": "Signar petition",
+	"petition-desc": "Adde un [[Special:Petition|pagina includibile]] pro colliger signaturas que permitte al usatores autorisate [[Special:PetitionData|discargar le signaturas]] como file CSV",
+	"petition-form-name": "Nomine",
+	"petition-form-email": "Adresse de e-mail",
+	"petition-form-country": "Pais",
+	"petition-form-message": "Message personal (optional)",
+	"petition-form-share": "Marca iste quadrato pro dar nos le permission de monstrar publicamente tu nomine, pais e message personal, e de liberar tu message personal sub un [//creativecommons.org/publicdomain/zero/1.0/ licentia CC0] (optional).",
+	"petition-form-privacy": "Le Fundation Wikimedia pote usar iste adresse de e-mail pro tener te al currente sur le progresso de iste campania e pro informar te de altere campanias. Nos non vendera jammais tu information a alteres ni lo usara pro inviar te publicitate. Nos respecta tu vita private. Le information que tu submitte hic es coperite per nostre [[wikimedia:Privacy Policy|politica de confidentialitate]].",
+	"petition-num-signatures": "$1 persona{{PLURAL:$1||s}} ha ja signate",
+	"petition-form-submit": "Signar",
+	"petition-form-required": "Iste campo es obligatori",
+	"petition-form-blocked": "Tu non pote signar iste petition perque tu es actualmente blocate.",
+	"petition-done": "Gratias. Tu signatura ha essite addite.",
+	"petitiondata": "Discargar datos de petition",
+	"petition-data-intro": "Hic tu pote discargar le signaturas del petition como file CSV. Nota ben que iste file contine informationes private como nomines e adresses de e-mail, e debe esser tractate in conformitate con le accordo de non-divulgation del Fundation Wikimedia.",
+	"petition-data-download": "Discargar como CSV",
+	"action-view-petition-data": "vider le datos del petition",
+	"right-view-petition-data": "Vider datos de petitiones",
+	"group-petitiondata": "Lectores de datos de petitiones",
+	"log-name-petition": "Registro de signaturas de petitiones",
+	"log-description-petition": "Tracia le signaturas de petitiones.",
+	"logentry-petition-sign": "$1 {{GENDER:$2|ha signate}} le petition \"$4\""
+}
