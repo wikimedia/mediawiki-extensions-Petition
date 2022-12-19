@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
 	"petition": "Firmar petición",
@@ -11,7 +12,7 @@
 	"petition-form-country": "País",
 	"petition-form-message": "Mensaxe persoal (opcional)",
 	"petition-form-share": "Marque esta caixa se podemos amosar publicamente o seu nome, país e mensaxe persoal, e para publicar a súa mensaxe persoal baixo a [//creativecommons.org/publicdomain/zero/1.0/ licenza CC0] (opcional).",
-	"petition-form-privacy": "A Fundación Wikimedia pode utilizar esta dirección de correo electrónico para informarte de como está indo esta campaña ou avisarte acerca doutras campañas. Nunca venderemos a túa información a terceiros e tampouco a   utilizaremos para enviarche publicidade. Valoramos a túa privacidade, e a información que envías aquí está cuberta pola nosa [[wikimedia:Privacy Policy|Política de privacidade]].",
+	"petition-form-privacy": "A Fundación Wikimedia pode utilizar este enderezo de correo electrónico para informarte de como está indo esta campaña ou avisarte acerca doutras campañas. Nunca venderemos a túa información a terceiros e tampouco a utilizaremos para enviarche publicidade. Valoramos a túa privacidade, e a información que envías aquí está cuberta pola nosa [[wikimedia:Privacy Policy|política de protección de datos]].",
 	"petition-num-signatures": "$1 {{PLURAL:$1|persoa asinou|persoas asinaron}} xa",
 	"petition-form-submit": "Asinar",
 	"petition-form-required": "Este campo é obrigatorio",
