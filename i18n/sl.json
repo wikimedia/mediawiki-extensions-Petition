@@ -4,8 +4,26 @@
 			"Eleassar"
 		]
 	},
+	"petition": "Podpis peticije",
+	"petition-desc": "Doda [[Special:Petition|vključljivo stran]] za zbiranje podpisov in za pooblaščene uporabnike, da lahko [[Special:PetitionData|prenesejo podpise]] kot datoteko CSV",
 	"petition-form-name": "Ime",
+	"petition-form-email": "E-poštni naslov",
 	"petition-form-country": "Država",
+	"petition-form-message": "Osebno sporočilo (izbirno)",
 	"petition-form-share": "Za dovoljenje, da lahko javno prikažemo vaše ime, državo in osebno sporočilo, in za objavo vašega osebnega sporočla pod licenco [//creativecommons.org/publicdomain/zero/1.0/ CC0 license] (neobvezno) obkljukajte to polje.",
-	"petition-form-privacy": "Organizacija Wikimedia Foundation lahko ta e-poštni naslov uporabi za obveščanje o poteku te akcije ali o drugih akcijah. Vaših podatkov ne bomo nikoli posredovali drugim ali jih uporabili za oglaševanje. Spoštujemo vašo zasebnost, za tu navedene podatke pa velja naš [[wikimedia:Privacy Policy|Pravilnik o zasebnosti]]."
+	"petition-form-privacy": "Organizacija Wikimedia Foundation lahko ta e-poštni naslov uporabi za obveščanje o poteku te akcije ali o drugih akcijah. Vaših podatkov ne bomo nikoli posredovali drugim ali jih uporabili za oglaševanje. Spoštujemo vašo zasebnost, za tu navedene podatke pa velja naš [[wikimedia:Privacy Policy|Pravilnik o zasebnosti]].",
+	"petition-num-signatures": "{{PLURAL:$1|Podpisala se je že $1 oseba|Podpisali sta se že $1 osebi|Podpisale so se že $1 osebe|Podpisalo se je že $1 oseb}}",
+	"petition-form-submit": "Podpiši",
+	"petition-form-required": "To polje je obvezno",
+	"petition-form-blocked": "Te peticije ne morete podpisati, ker ste trenutno blokirani.",
+	"petition-done": "Hvala. Vaš podpis je bil dodan.",
+	"petitiondata": "Prenos podatkov peticije",
+	"petition-data-intro": "Tu lahko prenesete podpise peticije kot datoteko CSV. Upoštevajte, da to vključuje zasebne podatke, kot so imena in e-poštni naslovi, ki jih je treba obravnavati v skladu s sporazumom o nerazkritju Fundacije Wikimedia.",
+	"petition-data-download": "Prenesi kot CSV",
+	"action-view-petition-data": "ogled podatkov peticije",
+	"right-view-petition-data": "Ogled podatkov peticij",
+	"group-petitiondata": "Pregledovalci podatkov peticij",
+	"log-name-petition": "Dnevnik podpisov peticij",
+	"log-description-petition": "Sledi podpise peticij.",
+	"logentry-petition-sign": "$1 je {{GENDER:$2|podpisal|podpisala|podpisal_a}} peticijo »$4«"
 }
