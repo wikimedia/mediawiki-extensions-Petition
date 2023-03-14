@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"petition": "Petitioun ënnerschreiwen",
@@ -9,7 +10,14 @@
 	"petition-form-email": "E-Mail-Adress",
 	"petition-form-country": "Land",
 	"petition-form-message": "Perséinleche Message (fakultativ)",
+	"petition-num-signatures": "$1 {{PLURAL:$1|Persoun huet|Persounen hu}} schonn ënnerschriwwen",
 	"petition-form-submit": "Ënnerschreiwen",
 	"petition-form-required": "Dëst Feld ass obligatoresch",
-	"petition-data-download": "Als csv eroflueden"
+	"petition-form-blocked": "Dir kënnt dës Petitioun net ënnerschreiwen, well Dir momentan gespaart sidd.",
+	"petition-done": "Merci. Är Ënnerschrëft gouf enregistréiert.",
+	"petitiondata": "Petitiounsdonnéeën eroflueden",
+	"petition-data-download": "Als CSV eroflueden",
+	"action-view-petition-data": "Petitiounsdonnéeën ze kucken",
+	"right-view-petition-data": "Petitiunsdonnéeë kucken",
+	"logentry-petition-sign": "$1 huet d'Petitioun \"$4\" {{GENDER:$2|ënnerschriwwen}}"
 }
