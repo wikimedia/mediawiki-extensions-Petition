@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"petition": "Potpiši peticiju",
+	"petition-form-name": "Ime i prezime",
+	"petition-form-email": "E-mail adresa",
+	"petition-form-country": "Zemlja",
+	"petition-form-message": "Osobna poruka (neobvezno)",
+	"petition-form-required": "Ovo polje je obavezno",
+	"petition-data-download": "Preuzmi kao CSV",
+	"action-view-petition-data": "pregled peticijskih podataka",
+	"right-view-petition-data": "Pregled peticijskih podataka",
+	"group-petitiondata": "Gledatelji peticijskih podataka"
+}
