@@ -1,12 +1,30 @@
 {
 	"@metadata": {
 		"authors": [
+			"Nokeoo",
 			"Zygimantus"
 		]
 	},
 	"petition": "Pasirašyti peticiją",
+	"petition-desc": "Prideda [[Special:Petition|įtrauktiną puslapį]] parašų rinkimui ir autorizuotiems naudotojams [[Special:PetitionData|parašų atsisiuntimui]] kaip CSV failą",
 	"petition-form-name": "Pavadinimas",
 	"petition-form-email": "El. pašto adresas",
 	"petition-form-country": "Šalis",
-	"right-view-petition-data": "Žiūrėti peticijos duomenis"
+	"petition-form-message": "Asmeninė žinutė (neprivaloma)",
+	"petition-form-share": "Pažymėkite čia, jei leidžiate rodyti jūsų vardą, valstybę ir asmeninę žinutę viešai ir leidžiate jūsų asmeninę žinutę naudoti pagal [//creativecommons.org/publicdomain/zero/1.0/ CC0 licenciją] (neprivaloma).",
+	"petition-form-privacy": "Vikimedijos fondas gali naudoti jūsų el. pašto adresą, kad jus informuotu kaip sekasi kampanija arba informuotu jus apie kitas kampanijas. Niekada neparduosime jūsų informacijos kitiems ir nenaudosime jos reklamai. Vertiname jūsų privatumą ir informaciją, kurią čia pateikiama, apima mūsų [[wikimedia:Privacy Policy|Privatumo politika]].",
+	"petition-num-signatures": "$1 {{PLURAL:$1|asmuo|asmenys}} jau pasirašė",
+	"petition-form-submit": "Pasirašyti",
+	"petition-form-required": "Šis laukas privalomas",
+	"petition-form-blocked": "Jūs negalite pasirašyti šios peticijos, nes šiuo metu esate užblokuotas.",
+	"petition-done": "Ačiū. Jūsų parašas pridėtas.",
+	"petitiondata": "Peticijos duomenų atsisiuntimas",
+	"petition-data-intro": "Čia galite atsisiųsti peticijos parašus kaip CSV failą. Atkreipkite dėmesį, kad faile yra privačios informacijos, pvz., vardai ir el. pašto adresai, ir turi būti laikomasi Vikimedijos fondo konfidencialumo susitarimo.",
+	"petition-data-download": "Atsisiųsti kaip CSV",
+	"action-view-petition-data": "žiūrėti peticijos duomenis",
+	"right-view-petition-data": "Žiūrėti peticijos duomenis",
+	"group-petitiondata": "Naudotojai, galintys peržiūrėti peticijų duomenis",
+	"log-name-petition": "Peticijos parašų žurnalas",
+	"log-description-petition": "Seka peticijų parašus.",
+	"logentry-petition-sign": "$1 {{GENDER:$2|pasirašė}} peticiją „$4“"
 }
