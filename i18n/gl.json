@@ -19,7 +19,7 @@
 	"petition-form-blocked": "Non pode asinar esta petición porque actualmente está bloqueado.",
 	"petition-done": "Grazas. A súa sinatura foi engadida.",
 	"petitiondata": "Descarga dos datos da petición",
-	"petition-data-intro": "Aquí pode descargar as sinaturas da petición como un ficheiro CSV. Teña en conta que este contén información privada, tales como os nomes e direccións de correo electrónico, e debe ser tratada en conformidade co acordo de non divulgación da Fundación Wikimedia.",
+	"petition-data-intro": "Aquí pode descargar as sinaturas da petición como un ficheiro CSV. Teña en conta que este contén información privada, como nomes e enderezos de correo electrónico, e debe ser tratada en conformidade co acordo de non divulgación da Fundación Wikimedia.",
 	"petition-data-download": "Descargar como CSV",
 	"action-view-petition-data": "ver datos da petición",
 	"right-view-petition-data": "Ver datos da petición",
