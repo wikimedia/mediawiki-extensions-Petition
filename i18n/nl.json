@@ -3,16 +3,30 @@
 		"authors": [
 			"Mainframe98",
 			"Romaine",
-			"Siebrand"
+			"Siebrand",
+			"McDutchie"
 		]
 	},
 	"petition": "Teken petitie",
+	"petition-desc": "Voegt een [[Special:Petition|invoegbare pagina]] toe waarmee handtekeningen verzameld kunnen worden en waarmee daartoe gemachtigde gebruikers handtekeningen in CSV-indeling kunnen [[Special:PetitionData|downloaden]]",
 	"petition-form-name": "Naam",
 	"petition-form-email": "E-mailadres",
 	"petition-form-country": "Land",
 	"petition-form-message": "Persoonlijk bericht (optioneel)",
+	"petition-form-share": "Vink dit vakje aan als we uw naam, land en persoonlijke boodschap openbaar mogen weergeven, en om uw persoonlijke boodschap openbaar te maken onder een [//creativecommons.org/publicdomain/zero/1.0/deed.nl CC0-licentie] (optioneel).",
+	"petition-form-privacy": "De Wikimedia Foundation kan dit e-mailadres gebruiken om u te laten weten hoe deze campagne verloopt of om u over andere campagnes te informeren. Wij zullen uw gegevens nooit aan anderen verkopen of gebruiken om reclame voor u te maken. Wij waarderen uw privacy en de informatie die u hier indient, valt onder ons [[wikimedia:Privacy Policy|privacybeleid]].",
 	"petition-num-signatures": "Er is al $1 keer {{PLURAL:$1|getekend}}",
+	"petition-form-submit": "Tekenen",
 	"petition-form-required": "Dit is een verplicht veld",
+	"petition-form-blocked": "U kunt deze petitie niet ondertekenen omdat u momenteel geblokkeerd bent.",
+	"petition-done": "Bedankt. Uw handtekening is toegevoegd.",
+	"petitiondata": "Gegevens petitie downloaden",
+	"petition-data-intro": "Hier kunt u de handtekeningen van de petitie downloaden als CSV-bestand. Houd er rekening mee dat dit privégegevens bevat, zoals namen en e-mailadressen, en moet worden behandeld in overeenstemming met de geheimhoudingsverklaring van de Wikimedia Foundation.",
 	"petition-data-download": "Downloaden als CSV",
-	"log-name-petition": "Logboek petitiehandtekeningen"
+	"action-view-petition-data": "petitiegegevens te bekijken",
+	"right-view-petition-data": "Petitiegegevens bekijken",
+	"group-petitiondata": "Bekijkers petitiegegevens",
+	"log-name-petition": "Logboek petitiehandtekeningen",
+	"log-description-petition": "Houdt handtekeningen van petities bij.",
+	"logentry-petition-sign": "$1 {{GENDER:$2|heeft}} de petitie “$4” ondertekend"
 }
