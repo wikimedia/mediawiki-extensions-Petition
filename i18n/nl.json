@@ -18,6 +18,15 @@
 	"petition-num-signatures": "Er is al $1 keer {{PLURAL:$1|getekend}}",
 	"petition-form-submit": "Tekenen",
 	"petition-form-required": "Dit is een verplicht veld",
+	"petition-form-blocked": "U kunt deze petitie niet ondertekenen omdat u momenteel geblokkeerd bent.",
+	"petition-done": "Bedankt. Uw handtekening is toegevoegd.",
+	"petitiondata": "Gegevens petitie downloaden",
+	"petition-data-intro": "Hier kunt u de handtekeningen van de petitie downloaden als CSV-bestand. Houd er rekening mee dat dit privégegevens bevat, zoals namen en e-mailadressen, en moet worden behandeld in overeenstemming met de geheimhoudingsverklaring van de Wikimedia Foundation.",
 	"petition-data-download": "Downloaden als CSV",
-	"log-name-petition": "Logboek petitiehandtekeningen"
+	"action-view-petition-data": "petitiegegevens te bekijken",
+	"right-view-petition-data": "Petitiegegevens bekijken",
+	"group-petitiondata": "Bekijkers petitiegegevens",
+	"log-name-petition": "Logboek petitiehandtekeningen",
+	"log-description-petition": "Houdt handtekeningen van petities bij.",
+	"logentry-petition-sign": "$1 {{GENDER:$2|heeft}} de petitie “$4” ondertekend"
 }
