@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Purodha"
 		]
 	},
-	"petition-desc": "Deihd en [[Special:Petition|ennföhschbahre Sigg]] en et Wikki, öm Ongerschreffte se sammelle, un för berääschteschte Metmaacher, di Sigge als en Datteij em <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Comma Separated Variables\">CSV</i>-Fommahd [[Special:PetitionData|eronger ze lahde]].",
+	"petition-desc": "Deihd en [[Special:Petition|ennföhschbahre Sigg]] en et Wikki, öm Ongerschreffte se sammelle, un för berääschteschte Metmaacher, di Sigge als en Datteij em CSV-Fommahd [[Special:PetitionData|eronger ze lahde]]",
 	"petition-form-name": "Nahme",
 	"petition-form-email": "De Adräß för de <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"„de eläktrohnesche Poß“\">e-mail</i>",
 	"petition-form-country": "Et Land",
@@ -13,5 +14,5 @@
 	"petition-form-required": "Heh dat Fälld kam_mer nit fottlohße",
 	"petition-form-blocked": "Do kanns heh  nit ongeschrihve, wejl De ald jeschpächt bes.",
 	"petition-done": "Mer bedngke ons. Ding „Ongerschreff“ es derbeijedonn.",
-	"petition-data-download": "Als <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"Comma Separated Variables\">CSV</i>-Datteij eronger lahde"
+	"petition-data-download": "Als CSV-Datteij eronger lahde"
 }
