@@ -79,7 +79,8 @@ class SpecialPetition extends IncludableSpecialPage {
 			return wfMessage( 'actionthrottledtext' )->text();
 		}
 
-		$dbw = wfGetDB( DB_PRIMARY, [], $wgPetitionDatabase );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			->getConnection( DB_PRIMARY, [], $wgPetitionDatabase );
 		if ( $dbw->isReadOnly() ) {
 			throw new ReadOnlyError();
 		}
@@ -141,7 +142,7 @@ class SpecialPetition extends IncludableSpecialPage {
 			$key,
 			$wgPetitionCountCacheTime,
 			static function () use ( $petitionName ) {
-				$dbr = wfGetDB( DB_REPLICA );
+				$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 				return $dbr->selectField( 'petition_data',
 					'count(pt_id)',
 					[ 'pt_petitionname' => $petitionName ]

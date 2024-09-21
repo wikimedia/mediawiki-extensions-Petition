@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class SpecialPetitionData extends SpecialPage {
 	public function __construct() {
 		parent::__construct( 'PetitionData', 'view-petition-data' );
@@ -19,7 +21,7 @@ class SpecialPetitionData extends SpecialPage {
 		$this->getOutput()->addHTML( $downloadLink );
 
 		if ( $par == 'csv' ) {
-			$dbr = wfGetDB( DB_REPLICA );
+			$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 			$res = $dbr->select( 'petition_data', '*', [], __METHOD__ );
 			$this->csvOutput( $res );
 		}
