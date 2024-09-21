@@ -137,15 +137,17 @@ class SpecialPetition extends IncludableSpecialPage {
 
 		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 		$key = $cache->makeKey( 'petition-numsignatures', md5( $petitionName ) );
+		$fname = __METHOD__;
 
 		return $cache->getWithSetCallback(
 			$key,
 			$wgPetitionCountCacheTime,
-			static function () use ( $petitionName ) {
+			static function () use ( $petitionName, $fname ) {
 				$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 				return $dbr->selectField( 'petition_data',
 					'count(pt_id)',
-					[ 'pt_petitionname' => $petitionName ]
+					[ 'pt_petitionname' => $petitionName ],
+					$fname
 				);
 			},
 			[ 'checkKeys' => [ $key ], 'lockTSE' => 10 ]
