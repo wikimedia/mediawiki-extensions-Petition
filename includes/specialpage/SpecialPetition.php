@@ -169,7 +169,7 @@ class SpecialPetition extends IncludableSpecialPage {
 			return $countries;
 		}
 
-		throw new Exception( 'Petition requires Extension:CLDR to be installed.' );
+		throw new RuntimeException( 'Petition requires Extension:CLDR to be installed.' );
 	}
 
 	private static function defineForm( $petitionName, $source, $countries ) {
