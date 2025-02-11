@@ -4,7 +4,8 @@
 			"Liuxinyu970226",
 			"Pcoombe (WMF)",
 			"Robby",
-			"Umherirrender"
+			"Umherirrender",
+			"Matma Rex"
 		]
 	},
 	"petition": "Title for Special:Petition page (not usually seen as it is transcluded on other pages)",
@@ -28,5 +29,5 @@
 	"group-petitiondata": "{{doc-group|petitiondata}}",
 	"log-name-petition": "Log page title",
 	"log-description-petition": "Log page description",
-	"logentry-petition-sign": "{{logentry}}\n* $1 is the username or IP address\n* $2 is the user's gender\n* $4 is the name of the petition which was signed"
+	"logentry-petition-sign": "{{logentry}}\nAdditional parameters:\n* $4 - the name of the petition which was signed"
 }
