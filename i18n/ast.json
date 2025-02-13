@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xuacu"
+			"Xuacu",
+			"YoaR"
 		]
 	},
 	"petition": "Roblar el pidimientu",
@@ -18,7 +19,7 @@
 	"petition-form-blocked": "Nun puedes roblar esti pidimientu porque tas bloquiáu anguaño.",
 	"petition-done": "Gracies. Añadióse la to firma.",
 	"petitiondata": "Descargar los datos del pidimientu",
-	"petition-data-intro": "Equí puedes descargar les firmes del pidimientu como ficheru en formatu CSV. Ten en cuenta qu'esti contien información privada, como nomes y direcciones de corréu electrónicu, que tien de tratase de conformidá col alcuerdu de non divulgación de la Fundación Wikimedia.",
+	"petition-data-intro": "Equí puedes descargar les firmes del pidimientu como ficheru en formatu CSV. Ten en cuenta qu'esti contién información privada, como nomes y direcciones de corréu electrónicu, que tien de tratase de conformidá col alcuerdu de non divulgación de la Fundación Wikimedia.",
 	"petition-data-download": "Descargar como CSV",
 	"action-view-petition-data": "ver los datos del pidimientu",
 	"right-view-petition-data": "Ver los datos del pidimientu",
