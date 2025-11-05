@@ -10,7 +10,7 @@ class SpecialPetitionData extends SpecialPage {
 	public function execute( $par ) {
 		$this->checkPermissions();
 
-		$this->getOutput()->setPageTitle( $this->msg( 'petitiondata' ) );
+		$this->getOutput()->setPageTitle( $this->msg( 'petitiondata' )->escaped() );
 		$this->getOutput()->addWikiMsg( 'petition-data-intro' );
 
 		$downloadTitle = $this->getPageTitle( 'csv' );
