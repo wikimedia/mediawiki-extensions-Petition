@@ -113,7 +113,7 @@ class SpecialPetition extends IncludableSpecialPage {
 		$entry->insert();
 
 		// And if CheckUser is installed, give it a heads up
-		// @phan-suppress-next-line PhanUndeclaredClassReference,PhanUndeclaredClassInCallable
+		// @phan-suppress-next-line PhanUndeclaredClassReference
 		if ( is_callable( [ CheckUserHooks::class, 'updateCheckUserData' ] ) ) {
 			$rc = $entry->getRecentChange();
 			// @phan-suppress-next-line PhanUndeclaredClassMethod
