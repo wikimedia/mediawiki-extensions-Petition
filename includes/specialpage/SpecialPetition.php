@@ -1,7 +1,7 @@
 <?php
 
-use MediaWiki\CheckUser\Hooks;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Registration\ExtensionRegistry;
 
 class SpecialPetition extends IncludableSpecialPage {
 	public function __construct() {
@@ -113,9 +113,10 @@ class SpecialPetition extends IncludableSpecialPage {
 		$entry->insert();
 
 		// And if CheckUser is installed, give it a heads up
-		if ( is_callable( [ Hooks::class, 'updateCheckUserData' ] ) ) {
+		if ( ExtensionRegistry::getInstance()->isLoaded( 'CheckUser' ) ) {
 			$rc = $entry->getRecentChange();
-			Hooks::updateCheckUserData( $rc );
+			MediaWikiServices::getInstance()->get( 'CheckUserInsert' )
+				->updateCheckUserData( $rc );
 		}
 
 		return true;
