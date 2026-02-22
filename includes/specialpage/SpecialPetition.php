@@ -50,12 +50,12 @@ class SpecialPetition extends IncludableSpecialPage {
 		$result = $form->tryAuthorizedSubmit();
 
 		if ( $result === true || ( $result instanceof Status && $result->isGood() ) ) {
-			$htmlOut = '<span class="petition-done">' . wfMessage( 'petition-done' )->escaped() . '</span>';
+			$htmlOut = '<span class="petition-done">' . $this->msg( 'petition-done' )->escaped() . '</span>';
 		} else {
 			$htmlOut = '<div class="petition-form">' . "\n";
 			$numberOfSignatures = self::getNumberOfSignatures( $petitionName );
 			$htmlOut .= '<div id="petition-num-signatures">';
-			$htmlOut .= wfMessage( 'petition-num-signatures', $numberOfSignatures )->escaped();
+			$htmlOut .= $this->msg( 'petition-num-signatures', $numberOfSignatures )->escaped();
 			$htmlOut .= '</div>' . "\n";
 			// Add the form, with any errors if there was an attempted submission
 			$htmlOut .= $form->getHtml( $result ) . "\n";
@@ -76,7 +76,7 @@ class SpecialPetition extends IncludableSpecialPage {
 		global $wgPetitionDatabase;
 
 		if ( $this->getUser()->pingLimiter( 'edit' ) ) {
-			return wfMessage( 'actionthrottledtext' )->text();
+			return $this->msg( 'actionthrottledtext' )->text();
 		}
 
 		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()
@@ -172,7 +172,7 @@ class SpecialPetition extends IncludableSpecialPage {
 		throw new RuntimeException( 'Petition requires Extension:CLDR to be installed.' );
 	}
 
-	private static function defineForm( $petitionName, $source, $countries ) {
+	private function defineForm( $petitionName, $source, $countries ) {
 		$formDescriptor = [
 			'petitionname' => [
 				'type' => 'hidden',
@@ -205,19 +205,19 @@ class SpecialPetition extends IncludableSpecialPage {
 			'share' => [
 				'type' => 'check',
 				'hidelabel' => true, // otherwise get an extra empty <label> element
-				'label-raw' => wfMessage( 'petition-form-share' )->parse(),
+				'label-raw' => $this->msg( 'petition-form-share' )->parse(),
 				'cssclass'  => 'plainlinks',
 			],
 			'privacy' => [
 				'type' => 'info',
-				'default' => wfMessage( 'petition-form-privacy' )->parse(),
+				'default' => $this->msg( 'petition-form-privacy' )->parse(),
 				'raw' => true,
 			],
 		];
 
-		$form = HTMLForm::factory( 'ooui', $formDescriptor, RequestContext::getMain(), 'petition' );
+		$form = HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext(), 'petition' );
 		$form->setId( 'petition-form' );
-		$form->setSubmitText( wfMessage( 'petition-form-submit' )->text() );
+		$form->setSubmitText( $this->msg( 'petition-form-submit' )->text() );
 
 		return $form;
 	}
