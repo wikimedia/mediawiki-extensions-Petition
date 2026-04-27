@@ -4,11 +4,13 @@
 			"Hwangjy9",
 			"Jerrykim306",
 			"Kwj2772",
+			"Tensama0415",
 			"Ykhwong",
 			"아라"
 		]
 	},
 	"petition": "청원 서명하기",
+	"petition-desc": "서명을 모으는 [[Special:Petition|포함 가능한 문서]]를 추가하고, 승인된 사용자가 [[Special:PetitionData|서명을 CSV 파일로 다운로드]]할 수 있도록 합니다",
 	"petition-form-name": "이름",
 	"petition-form-email": "이메일 주소",
 	"petition-form-country": "국가",
@@ -25,6 +27,7 @@
 	"petition-data-download": "CSV로 다운로드",
 	"action-view-petition-data": "청원 데이터를 볼",
 	"right-view-petition-data": "청원 데이터 보기",
+	"group-petitiondata": "청원 데이터 열람자",
 	"log-name-petition": "청원 서명 기록",
 	"log-description-petition": "청원 서명 내역을 추적합니다.",
 	"logentry-petition-sign": "$1님이 \"$4\" 청원에 {{GENDER:$2|서명}}하였습니다."
