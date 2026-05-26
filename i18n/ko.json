@@ -25,7 +25,7 @@
 	"petitiondata": "청원 데이터 다운로드",
 	"petition-data-intro": "여기서 청원 서명 내역을 CSV 파일로 다운로드할 수 있습니다. 여기에는 이름이나 이메일 주소와 같은 개인정보가 포함되어 있으며, 위키미디어 재단 비밀 준수 약정을 준수하여야 합니다.",
 	"petition-data-download": "CSV로 다운로드",
-	"action-view-petition-data": "청원 데이터를 볼",
+	"action-view-petition-data": "청원 데이터 보기",
 	"right-view-petition-data": "청원 데이터 보기",
 	"group-petitiondata": "청원 데이터 열람자",
 	"log-name-petition": "청원 서명 기록",
